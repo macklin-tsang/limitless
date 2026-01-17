@@ -18,10 +18,10 @@
 **Duration**: 30 minutes
 
 **Tasks**:
-- Create GitHub repository: `poker-ai-agent`
+- Create GitHub repository: `limitless`
 - Initialize project structure:
   ```
-  poker-ai-agent/
+  limitless/
   ├── backend-java/
   ├── backend-python/
   ├── frontend/
@@ -40,7 +40,7 @@
 **Duration**: 1 hour
 
 **Tasks**:
-- Create `/backend-python/poker_engine/` folder
+- Create `/backend-python/engine/` folder
 - Build `card.py` with Card class:
   - Properties: `rank`, `suit`, `rank_value`
   - Methods: `__str__()`, `__repr__()`, `__eq__()`, `__hash__()`
@@ -69,7 +69,7 @@ class Card:
 **Duration**: 6-8 hours
 
 **Tasks**:
-- Create `hand_evaluator.py`
+- Create `hand_eval.py`
 - Implement hand ranking functions:
   - `check_royal_flush()`
   - `check_straight_flush()`
@@ -109,7 +109,7 @@ class Card:
 **Duration**: 4-6 hours
 
 **Tasks**:
-- Create `agent_brain.py`
+- Create `brain.py`
 - Implement `calculate_hand_strength(hand)` function:
   - Returns percentile (0.0 to 1.0) where 1.0 = AA
   - Handle pocket pairs, suited cards, offsuit cards
@@ -145,7 +145,7 @@ Late Position (2-3): + 88-77, suited connectors, suited aces
 **Duration**: 6-8 hours
 
 **Tasks**:
-- Create `poker_game.py` with PokerGame class
+- Create `game.py` with PokerGame class
 - Implement game state management:
   - Players (name, stack, position, hand, status)
   - Deck (shuffling, dealing)
