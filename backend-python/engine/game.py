@@ -9,7 +9,7 @@ import random
 from typing import List, Tuple, Dict
 from card import Card, Rank, Suit
 from hand_eval import rank_hand
-from brain import make_decision
+from brain import make_decision, make_preflop_decision, make_postflop_decision
 
 
 class Deck:
@@ -286,14 +286,16 @@ class PokerGame:
         last_raiser = None
 
         while True:
-            active_players = [p for p in self.players if p.is_active and not p.is_all_in]
-
-            # If everyone is all-in or folded except one, stop
-            if len(active_players) <= 1:
-                break
-
             # Get current player
             current_player = action_order[action_count % len(action_order)]
+
+            # Skip if current player is already all-in
+            if current_player.is_all_in:
+                action_count += 1
+                # Prevent infinite loop
+                if action_count > len(action_order) * 20:
+                    break
+                continue
 
             # Check if betting is complete
             all_matched = all(p.current_bet == self.current_bet or not p.is_active or p.is_all_in
@@ -305,18 +307,57 @@ class PokerGame:
                 if last_raiser is None or action_count >= len(action_order) + action_order.index(last_raiser):
                     break
 
+            # Count active non-all-in players
+            active_players = [p for p in self.players if p.is_active and not p.is_all_in]
+
+            # If everyone is all-in or folded (no one can act), stop
+            if len(active_players) == 0:
+                break
+
             # Player must act
             facing_raise = current_player.current_bet < self.current_bet
+            facing_bet = facing_raise  # Alias for clarity
             raise_amount = self.current_bet if facing_raise else None
+            bet_amount = self.current_bet - current_player.current_bet if facing_raise else None
 
-            # Get action from brain (simplified for now - always use brain)
-            action, bet_size = make_decision(
-                tuple(current_player.hole_cards),
-                current_player.position,
-                big_blind=self.big_blind,
-                facing_raise=facing_raise,
-                raise_amount=raise_amount
-            )
+            # Determine if player is in position (last to act)
+            # In heads-up: Button acts last postflop (is in position)
+            is_in_position = current_player.position == 1 if phase != "preflop" else False
+
+            # Determine if player was preflop aggressor (last raiser preflop)
+            # For now, assume button is preflop aggressor (simplified)
+            is_preflop_aggressor = current_player.position == 1
+
+            # Get action from brain based on phase/street
+            if phase == "preflop":
+                # Use preflop decision logic
+                action, bet_size = make_preflop_decision(
+                    hand=tuple(current_player.hole_cards),
+                    position=current_player.position,
+                    pot=self.pot,
+                    current_stack=current_player.stack,
+                    big_blind=self.big_blind,
+                    facing_raise=facing_raise,
+                    raise_amount=raise_amount,
+                    facing_3bet=False,  # TODO: Track 3-bet/4-bet state
+                    facing_4bet=False,
+                    is_first_to_act=(current_player.position == 1)  # Button is first to act preflop
+                )
+            else:
+                # Use postflop decision logic (flop, turn, river)
+                action, bet_size = make_postflop_decision(
+                    hand=tuple(current_player.hole_cards),
+                    board=self.board,
+                    position=current_player.position,
+                    pot=self.pot,
+                    current_stack=current_player.stack,
+                    big_blind=self.big_blind,
+                    is_in_position=is_in_position,
+                    is_preflop_aggressor=is_preflop_aggressor,
+                    facing_bet=facing_bet,
+                    bet_amount=bet_amount,
+                    street=phase  # Pass phase as street parameter
+                )
 
             # Execute action
             if action == "fold":
@@ -443,35 +484,41 @@ class PokerGame:
             self.award_pot(winner)
             return (winner, amount_won, "opponent folded")
 
+        # Check if both players are all-in (no more betting possible)
+        both_all_in = all(p.is_all_in or not p.is_active for p in self.players)
+
         # 4. Flop
         if len([p for p in self.players if p.is_active]) > 1:
             self.deal_flop()
 
-            if not self.betting_round("flop"):
-                winner = next(p for p in self.players if p.is_active)
-                amount_won = self.pot
-                self.award_pot(winner)
-                return (winner, amount_won, "opponent folded")
+            if not both_all_in:
+                if not self.betting_round("flop"):
+                    winner = next(p for p in self.players if p.is_active)
+                    amount_won = self.pot
+                    self.award_pot(winner)
+                    return (winner, amount_won, "opponent folded")
 
         # 5. Turn
         if len([p for p in self.players if p.is_active]) > 1:
             self.deal_turn()
 
-            if not self.betting_round("turn"):
-                winner = next(p for p in self.players if p.is_active)
-                amount_won = self.pot
-                self.award_pot(winner)
-                return (winner, amount_won, "opponent folded")
+            if not both_all_in:
+                if not self.betting_round("turn"):
+                    winner = next(p for p in self.players if p.is_active)
+                    amount_won = self.pot
+                    self.award_pot(winner)
+                    return (winner, amount_won, "opponent folded")
 
         # 6. River
         if len([p for p in self.players if p.is_active]) > 1:
             self.deal_river()
 
-            if not self.betting_round("river"):
-                winner = next(p for p in self.players if p.is_active)
-                amount_won = self.pot
-                self.award_pot(winner)
-                return (winner, amount_won, "opponent folded")
+            if not both_all_in:
+                if not self.betting_round("river"):
+                    winner = next(p for p in self.players if p.is_active)
+                    amount_won = self.pot
+                    self.award_pot(winner)
+                    return (winner, amount_won, "opponent folded")
 
         # 7. Showdown
         winner, hand_desc = self.showdown()
