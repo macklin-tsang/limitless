@@ -130,16 +130,31 @@ def make_preflop_decision(
             # Fold weak hands
             return ("fold", 0.0)
 
-    # First to act (can raise first-in)
+    # First to act preflop (button acts first)
     if is_first_to_act:
         # Raise top 60% of hands
         if hand_strength >= 0.40:  # Top 60%
             return ("raise", 3.0 * big_blind)
         else:
+            # Bottom 40% - fold (open-fold)
             return ("fold", 0.0)
 
+    # Not first to act, not facing raise = has option (e.g., BB after SB limp/call)
+    # In this case, can check or raise, but CANNOT fold (already have chips in pot)
+    if not facing_raise:
+        # Has option - check or raise
+        if hand_strength >= 0.40:  # Top 60%
+            return ("raise", 3.0 * big_blind)
+        else:
+            return ("check", 0.0)  # Check weak hands when have option
+
     # Should not reach here in normal flow
-    return ("fold", 0.0)
+    # If we somehow do, check if we can check, otherwise fold
+    # This is a safety fallback
+    if not facing_raise:
+        return ("check", 0.0)
+    else:
+        return ("fold", 0.0)
 
 
 def make_postflop_decision(
