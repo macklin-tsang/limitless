@@ -326,18 +326,38 @@ class SimulationGame:
             is_preflop_aggressor = current_player.position == 1
 
             if phase == "preflop":
-                action, bet_size = current_player.brain_module.make_preflop_decision(
-                    hand=tuple(current_player.hole_cards),
-                    position=current_player.position,
-                    pot=self.pot,
-                    current_stack=current_player.stack,
-                    big_blind=self.big_blind,
-                    facing_raise=facing_raise,
-                    raise_amount=raise_amount,
-                    facing_3bet=False,
-                    facing_4bet=False,
-                    is_first_to_act=(current_player.position == 1)
-                )
+                # Special handling for heads-up preflop:
+                # Button completing SB to BB should be treated as "first to act"
+                is_button_completing = (current_player.position == 1 and
+                                       current_player.current_bet == self.small_blind and
+                                       self.current_bet == self.big_blind)
+
+                if is_button_completing:
+                    action, bet_size = current_player.brain_module.make_preflop_decision(
+                        hand=tuple(current_player.hole_cards),
+                        position=current_player.position,
+                        pot=self.pot,
+                        current_stack=current_player.stack,
+                        big_blind=self.big_blind,
+                        facing_raise=False,  # Treat as first to act
+                        raise_amount=None,
+                        facing_3bet=False,
+                        facing_4bet=False,
+                        is_first_to_act=True
+                    )
+                else:
+                    action, bet_size = current_player.brain_module.make_preflop_decision(
+                        hand=tuple(current_player.hole_cards),
+                        position=current_player.position,
+                        pot=self.pot,
+                        current_stack=current_player.stack,
+                        big_blind=self.big_blind,
+                        facing_raise=facing_raise,
+                        raise_amount=raise_amount,
+                        facing_3bet=False,
+                        facing_4bet=False,
+                        is_first_to_act=False
+                    )
             else:
                 action, bet_size = current_player.brain_module.make_postflop_decision(
                     hand=tuple(current_player.hole_cards),
@@ -362,6 +382,10 @@ class SimulationGame:
                 current_player.fold()
                 self.action_history.append(f"{current_player.name} folds")
                 return False
+
+            elif action == "check":
+                # Check means no additional bet
+                self.action_history.append(f"{current_player.name} checks")
 
             elif action == "call":
                 call_amount = self.current_bet

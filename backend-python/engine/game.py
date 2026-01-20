@@ -331,18 +331,44 @@ class PokerGame:
             # Get action from brain based on phase/street
             if phase == "preflop":
                 # Use preflop decision logic
-                action, bet_size = make_preflop_decision(
-                    hand=tuple(current_player.hole_cards),
-                    position=current_player.position,
-                    pot=self.pot,
-                    current_stack=current_player.stack,
-                    big_blind=self.big_blind,
-                    facing_raise=facing_raise,
-                    raise_amount=raise_amount,
-                    facing_3bet=False,  # TODO: Track 3-bet/4-bet state
-                    facing_4bet=False,
-                    is_first_to_act=(current_player.position == 1)  # Button is first to act preflop
-                )
+                # Special handling for heads-up preflop:
+                # - Button (SB) acts first: Consider as "first to act" for decision purposes
+                #   even though facing BB, because completing SB->BB is like opening action
+                # - BB acts second: Has option if Button just called (not facing raise)
+
+                # Determine if this is Button's first action (completing SB to BB)
+                is_button_completing = (current_player.position == 1 and
+                                       current_player.current_bet == self.small_blind and
+                                       self.current_bet == self.big_blind)
+
+                # If Button is completing SB to BB, treat as "first to act" (raise or fold, no limp)
+                # Otherwise use actual facing_raise status
+                if is_button_completing:
+                    action, bet_size = make_preflop_decision(
+                        hand=tuple(current_player.hole_cards),
+                        position=current_player.position,
+                        pot=self.pot,
+                        current_stack=current_player.stack,
+                        big_blind=self.big_blind,
+                        facing_raise=False,  # Treat as first to act
+                        raise_amount=None,
+                        facing_3bet=False,
+                        facing_4bet=False,
+                        is_first_to_act=True  # This is opening action
+                    )
+                else:
+                    action, bet_size = make_preflop_decision(
+                        hand=tuple(current_player.hole_cards),
+                        position=current_player.position,
+                        pot=self.pot,
+                        current_stack=current_player.stack,
+                        big_blind=self.big_blind,
+                        facing_raise=facing_raise,
+                        raise_amount=raise_amount,
+                        facing_3bet=False,  # TODO: Track 3-bet/4-bet state
+                        facing_4bet=False,
+                        is_first_to_act=False
+                    )
             else:
                 # Use postflop decision logic (flop, turn, river)
                 action, bet_size = make_postflop_decision(
@@ -364,6 +390,10 @@ class PokerGame:
                 current_player.fold()
                 self.action_history.append(f"{current_player.name} folds")
                 return False  # Hand ends
+
+            elif action == "check":
+                # Check means no additional bet (only valid when not facing a bet)
+                self.action_history.append(f"{current_player.name} checks")
 
             elif action == "call":
                 # Call means matching the current bet
