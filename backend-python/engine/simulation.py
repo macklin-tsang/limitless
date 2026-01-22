@@ -20,7 +20,7 @@ from datetime import datetime
 from typing import List, Dict, Tuple, Callable, Optional
 from card import Card, Rank, Suit
 from hand_eval import rank_hand
-import brain as tag_brain
+import brain as main_brain
 import fish_brain
 
 
@@ -687,17 +687,14 @@ def print_simulation_summary(result: SimulationResult):
     print("=" * 70)
 
 
-def save_results_to_csv(result: SimulationResult, filename: str = None):
+def save_results_to_csv(result: SimulationResult, filename: str = "simulation_results.csv"):
     """
     Save simulation results to CSV file.
 
     Args:
         result: SimulationResult to save
-        filename: Output filename (default: simulation_results_TIMESTAMP.csv)
+        filename: Output filename (default: simulation_results.csv, overwrites existing)
     """
-    if filename is None:
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        filename = f"simulation_results_{timestamp}.csv"
 
     with open(filename, 'w', newline='') as csvfile:
         writer = csv.writer(csvfile)
@@ -730,17 +727,14 @@ def save_results_to_csv(result: SimulationResult, filename: str = None):
     return filename
 
 
-def save_hand_histories(result: SimulationResult, filename: str = None):
+def save_hand_histories(result: SimulationResult, filename: str = "hand_histories.txt"):
     """
     Save detailed hand histories to a text file.
 
     Args:
         result: SimulationResult to save
-        filename: Output filename
+        filename: Output filename (default: hand_histories.txt, overwrites existing)
     """
-    if filename is None:
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        filename = f"hand_histories_{timestamp}.txt"
 
     with open(filename, 'w') as f:
         f.write("=" * 70 + "\n")
@@ -765,10 +759,10 @@ def save_hand_histories(result: SimulationResult, filename: str = None):
 
 
 # Pre-configured agents
-TAG_AGENT = AgentConfig(
-    name="TAG Bot",
-    brain_module=tag_brain,
-    description="Tight-Aggressive strategy - plays strong hands aggressively"
+MAIN_AGENT = AgentConfig(
+    name="Main Agent",
+    brain_module=main_brain,
+    description="Main agent using brain.py - Tight-Aggressive strategy"
 )
 
 FISH_AGENT = AgentConfig(
@@ -783,14 +777,14 @@ if __name__ == "__main__":
     print("Poker Simulation Runner")
     print("=" * 70)
     print()
-    print("Running simulation: TAG Bot vs Fish")
+    print("Running simulation: Main Agent vs Fish")
     print("Hands: 100")
     print()
 
     # Run simulation
     result = run_simulation(
         num_hands=100,
-        agent1_config=TAG_AGENT,
+        agent1_config=MAIN_AGENT,
         agent2_config=FISH_AGENT,
         starting_stack=1000.0,
         small_blind=5.0,
@@ -803,7 +797,7 @@ if __name__ == "__main__":
     # Print summary
     print_simulation_summary(result)
 
-    # Save results
+    # Save results (overwrites existing files)
     save_results_to_csv(result)
     save_hand_histories(result)
 
