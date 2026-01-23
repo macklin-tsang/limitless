@@ -1,0 +1,207 @@
+import React, { useState } from 'react';
+import { runSimulation, handleApiError } from '../services/api';
+
+function Simulation() {
+  const [config, setConfig] = useState({
+    userId: 1,
+    agentType: 'TAG',
+    opponentType: 'RANDOM',
+    numGames: 100,
+    smallBlind: 1,
+    bigBlind: 2,
+  });
+  const [results, setResults] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+
+  const handleInputChange = (e) => {
+    const { name, value, type } = e.target;
+    setConfig((prev) => ({
+      ...prev,
+      [name]: type === 'number' ? parseInt(value, 10) : value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setError(null);
+    setResults(null);
+
+    try {
+      const data = await runSimulation(config);
+      setResults(data);
+    } catch (err) {
+      const errResult = handleApiError(err);
+      setError(errResult.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 p-8">
+      <div className="max-w-4xl mx-auto">
+        <h1 className="text-3xl font-bold text-white mb-8">Run Simulation</h1>
+
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Configuration Form */}
+          <div className="bg-gray-800 rounded-xl p-6 shadow-xl">
+            <h2 className="text-xl font-semibold text-white mb-4">Configuration</h2>
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div>
+                <label className="block text-gray-300 mb-1">Agent Type</label>
+                <select
+                  name="agentType"
+                  value={config.agentType}
+                  onChange={handleInputChange}
+                  className="w-full bg-gray-700 text-white rounded-lg p-3 border border-gray-600 focus:border-yellow-500 focus:outline-none"
+                >
+                  <option value="TAG">TAG (Tight-Aggressive)</option>
+                  <option value="LAG">LAG (Loose-Aggressive)</option>
+                  <option value="ROCK">Rock (Tight-Passive)</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-gray-300 mb-1">Opponent Type</label>
+                <select
+                  name="opponentType"
+                  value={config.opponentType}
+                  onChange={handleInputChange}
+                  className="w-full bg-gray-700 text-white rounded-lg p-3 border border-gray-600 focus:border-yellow-500 focus:outline-none"
+                >
+                  <option value="RANDOM">Random</option>
+                  <option value="TAG">TAG</option>
+                  <option value="LAG">LAG</option>
+                  <option value="FISH">Fish (Calling Station)</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-gray-300 mb-1">Number of Games</label>
+                <input
+                  type="number"
+                  name="numGames"
+                  value={config.numGames}
+                  onChange={handleInputChange}
+                  min="10"
+                  max="10000"
+                  className="w-full bg-gray-700 text-white rounded-lg p-3 border border-gray-600 focus:border-yellow-500 focus:outline-none"
+                />
+              </div>
+
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-gray-300 mb-1">Small Blind</label>
+                  <input
+                    type="number"
+                    name="smallBlind"
+                    value={config.smallBlind}
+                    onChange={handleInputChange}
+                    min="1"
+                    className="w-full bg-gray-700 text-white rounded-lg p-3 border border-gray-600 focus:border-yellow-500 focus:outline-none"
+                  />
+                </div>
+                <div>
+                  <label className="block text-gray-300 mb-1">Big Blind</label>
+                  <input
+                    type="number"
+                    name="bigBlind"
+                    value={config.bigBlind}
+                    onChange={handleInputChange}
+                    min="2"
+                    className="w-full bg-gray-700 text-white rounded-lg p-3 border border-gray-600 focus:border-yellow-500 focus:outline-none"
+                  />
+                </div>
+              </div>
+
+              <button
+                type="submit"
+                disabled={loading}
+                className="w-full py-3 bg-yellow-500 hover:bg-yellow-400 disabled:bg-gray-600 text-gray-900 font-bold rounded-lg transition-colors"
+              >
+                {loading ? 'Running Simulation...' : 'Run Simulation'}
+              </button>
+            </form>
+          </div>
+
+          {/* Results Display */}
+          <div className="bg-gray-800 rounded-xl p-6 shadow-xl">
+            <h2 className="text-xl font-semibold text-white mb-4">Results</h2>
+
+            {loading && (
+              <div className="flex items-center justify-center h-64">
+                <div className="animate-spin rounded-full h-12 w-12 border-4 border-yellow-500 border-t-transparent"></div>
+              </div>
+            )}
+
+            {error && (
+              <div className="bg-red-900/50 border border-red-500 rounded-lg p-4 text-red-200">
+                {error}
+              </div>
+            )}
+
+            {results && (
+              <div className="space-y-4">
+                <div className="grid grid-cols-2 gap-4">
+                  <StatCard label="Agent" value={results.agentName} />
+                  <StatCard label="Opponent" value={results.opponentName} />
+                  <StatCard label="Wins" value={results.wins} />
+                  <StatCard label="Losses" value={results.losses} />
+                  <StatCard
+                    label="Win Rate"
+                    value={`${(results.winRate * 100).toFixed(1)}%`}
+                    highlight={results.winRate > 0.5}
+                  />
+                  <StatCard
+                    label="Total Profit"
+                    value={`${results.totalProfit >= 0 ? '+' : ''}${results.totalProfit.toFixed(2)} BB`}
+                    highlight={results.totalProfit > 0}
+                  />
+                  <StatCard
+                    label="Profit/Hand"
+                    value={`${results.profitPerHand >= 0 ? '+' : ''}${results.profitPerHand.toFixed(4)} BB`}
+                    highlight={results.profitPerHand > 0}
+                    colSpan="2"
+                  />
+                </div>
+
+                <div className="mt-4 pt-4 border-t border-gray-700">
+                  <p className="text-gray-400 text-sm">
+                    {results.wins > results.losses
+                      ? 'The agent performed well against this opponent type!'
+                      : 'The agent struggled against this opponent. Consider adjusting strategy.'}
+                  </p>
+                </div>
+              </div>
+            )}
+
+            {!loading && !error && !results && (
+              <div className="flex items-center justify-center h-64 text-gray-500">
+                <p>Configure and run a simulation to see results</p>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function StatCard({ label, value, highlight = false, colSpan = '1' }) {
+  return (
+    <div
+      className={`bg-gray-700/50 rounded-lg p-4 ${colSpan === '2' ? 'col-span-2' : ''}`}
+    >
+      <p className="text-gray-400 text-sm">{label}</p>
+      <p
+        className={`text-2xl font-bold ${highlight ? 'text-green-400' : 'text-white'}`}
+      >
+        {value}
+      </p>
+    </div>
+  );
+}
+
+export default Simulation;
