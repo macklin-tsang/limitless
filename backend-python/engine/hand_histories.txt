@@ -1,0 +1,2008 @@
+======================================================================
+HAND HISTORIES
+======================================================================
+
+--- Hand #1 ---
+Winner: Fish ($20.00) - Boat
+Player 1 cards: 3♣ 9♠
+Player 2 cards: 3♠ 10♣
+Board: 4♥ 3♥ 10♠ 10♦ K♦
+Stacks: P1 $1000.00 -> $990.00, P2 $1000.00 -> $1010.00
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent checks
+  FLOP: 4♥, 3♥, 10♠
+  Main Agent checks
+  Fish checks
+  TURN: 10♦
+  Main Agent checks
+  Fish checks
+  RIVER: K♦
+  Main Agent checks
+  Fish checks
+  Main Agent shows 3♣, 9♠: Two Pair
+  Fish shows 3♠, 10♣: Boat
+  Fish wins $20.00
+
+--- Hand #2 ---
+Winner: Main Agent ($120.00) - One Pair
+Player 1 cards: K♥ 7♠
+Player 2 cards: J♦ 7♥
+Board: 2♣ Q♥ Q♦ 6♠ 3♥
+Stacks: P1 $990.00 -> $1050.00, P2 $1010.00 -> $950.00
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: 2♣, Q♥, Q♦
+  Fish checks
+  Main Agent raises to $30.00
+  Fish calls $30.00
+  TURN: 6♠
+  Fish checks
+  Main Agent checks
+  RIVER: 3♥
+  Fish checks
+  Main Agent checks
+  Main Agent shows K♥, 7♠: One Pair
+  Fish shows J♦, 7♥: One Pair
+  Main Agent wins $120.00
+
+--- Hand #3 ---
+Winner: Main Agent ($20.00) - One Pair
+Player 1 cards: Q♦ 8♣
+Player 2 cards: 9♥ 2♥
+Board: 7♦ A♥ 10♣ J♠ 10♠
+Stacks: P1 $1050.00 -> $1060.00, P2 $950.00 -> $940.00
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent checks
+  FLOP: 7♦, A♥, 10♣
+  Main Agent checks
+  Fish checks
+  TURN: J♠
+  Main Agent checks
+  Fish checks
+  RIVER: 10♠
+  Main Agent checks
+  Fish checks
+  Main Agent shows Q♦, 8♣: One Pair
+  Fish shows 9♥, 2♥: One Pair
+  Main Agent wins $20.00
+
+--- Hand #4 ---
+Winner: Fish ($15.00) - opponent folded
+Player 1 cards: Q♠ 5♦
+Player 2 cards: 2♠ 9♣
+Board: 
+Stacks: P1 $1060.00 -> $1055.00, P2 $940.00 -> $945.00
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent folds
+  Fish wins $15.00
+
+--- Hand #5 ---
+Winner: Fish ($20.00) - One Pair
+Player 1 cards: 4♦ 9♦
+Player 2 cards: A♣ 9♠
+Board: 3♥ 6♠ 10♥ K♦ 9♣
+Stacks: P1 $1055.00 -> $1045.00, P2 $945.00 -> $955.00
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent checks
+  FLOP: 3♥, 6♠, 10♥
+  Main Agent checks
+  Fish checks
+  TURN: K♦
+  Main Agent checks
+  Fish checks
+  RIVER: 9♣
+  Main Agent checks
+  Fish checks
+  Main Agent shows 4♦, 9♦: One Pair
+  Fish shows A♣, 9♠: One Pair
+  Fish wins $20.00
+
+--- Hand #6 ---
+Winner: Main Agent ($298.80) - Trips
+Player 1 cards: 9♣ 10♥
+Player 2 cards: 8♠ 4♥
+Board: 10♣ 10♦ 4♦ 3♦ 6♥
+Stacks: P1 $1045.00 -> $1194.40, P2 $955.00 -> $805.60
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: 10♣, 10♦, 4♦
+  Fish checks
+  Main Agent raises to $19.80
+  Fish calls $19.80
+  TURN: 3♦
+  Fish checks
+  Main Agent raises to $99.60
+  Fish calls $99.60
+  RIVER: 6♥
+  Fish checks
+  Main Agent checks
+  Main Agent shows 9♣, 10♥: Trips
+  Fish shows 8♠, 4♥: Two Pair
+  Main Agent wins $298.80
+
+--- Hand #7 ---
+Winner: Fish ($60.00) - Two Pair
+Player 1 cards: 5♠ A♣
+Player 2 cards: K♦ 6♦
+Board: 9♦ Q♠ K♣ 7♠ 6♠
+Stacks: P1 $1194.40 -> $1164.40, P2 $805.60 -> $835.60
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: 9♦, Q♠, K♣
+  Main Agent checks
+  Fish checks
+  TURN: 7♠
+  Main Agent checks
+  Fish checks
+  RIVER: 6♠
+  Main Agent checks
+  Fish checks
+  Main Agent shows 5♠, A♣: High Card
+  Fish shows K♦, 6♦: Two Pair
+  Fish wins $60.00
+
+--- Hand #8 ---
+Winner: Fish ($15.00) - opponent folded
+Player 1 cards: 6♠ 4♥
+Player 2 cards: Q♥ 7♥
+Board: 
+Stacks: P1 $1164.40 -> $1159.40, P2 $835.60 -> $840.60
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent folds
+  Fish wins $15.00
+
+--- Hand #9 ---
+Winner: Main Agent ($20.00) - Two Pair
+Player 1 cards: 7♣ J♠
+Player 2 cards: 10♦ 4♠
+Board: K♦ J♦ K♣ 10♠ 8♥
+Stacks: P1 $1159.40 -> $1169.40, P2 $840.60 -> $830.60
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent checks
+  FLOP: K♦, J♦, K♣
+  Main Agent checks
+  Fish checks
+  TURN: 10♠
+  Main Agent checks
+  Fish checks
+  RIVER: 8♥
+  Main Agent checks
+  Fish checks
+  Main Agent shows 7♣, J♠: Two Pair
+  Fish shows 10♦, 4♠: Two Pair
+  Main Agent wins $20.00
+
+--- Hand #10 ---
+Winner: Main Agent ($99.60) - One Pair
+Player 1 cards: A♥ 10♥
+Player 2 cards: 6♥ 6♠
+Board: J♥ 4♣ 8♦ 10♦ 3♠
+Stacks: P1 $1169.40 -> $1219.20, P2 $830.60 -> $780.80
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: J♥, 4♣, 8♦
+  Fish checks
+  Main Agent raises to $19.80
+  Fish calls $19.80
+  TURN: 10♦
+  Fish checks
+  Main Agent checks
+  RIVER: 3♠
+  Fish checks
+  Main Agent checks
+  Main Agent shows A♥, 10♥: One Pair
+  Fish shows 6♥, 6♠: One Pair
+  Main Agent wins $99.60
+
+--- Hand #11 ---
+Winner: Main Agent ($20.00) - Boat
+Player 1 cards: A♠ 2♦
+Player 2 cards: 5♣ K♥
+Board: K♠ 2♣ Q♦ A♥ 2♠
+Stacks: P1 $1219.20 -> $1229.20, P2 $780.80 -> $770.80
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent checks
+  FLOP: K♠, 2♣, Q♦
+  Main Agent checks
+  Fish checks
+  TURN: A♥
+  Main Agent checks
+  Fish checks
+  RIVER: 2♠
+  Main Agent checks
+  Fish checks
+  Main Agent shows A♠, 2♦: Boat
+  Fish shows 5♣, K♥: Two Pair
+  Main Agent wins $20.00
+
+--- Hand #12 ---
+Winner: Fish ($15.00) - opponent folded
+Player 1 cards: 8♣ 7♣
+Player 2 cards: K♥ 7♦
+Board: 
+Stacks: P1 $1229.20 -> $1224.20, P2 $770.80 -> $775.80
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent folds
+  Fish wins $15.00
+
+--- Hand #13 ---
+Winner: Main Agent ($60.00) - Flush
+Player 1 cards: 10♥ 9♥
+Player 2 cards: 10♦ 7♠
+Board: J♠ 3♥ K♥ 2♥ 2♦
+Stacks: P1 $1224.20 -> $1254.20, P2 $775.80 -> $745.80
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: J♠, 3♥, K♥
+  Main Agent checks
+  Fish checks
+  TURN: 2♥
+  Main Agent checks
+  Fish checks
+  RIVER: 2♦
+  Main Agent checks
+  Fish checks
+  Main Agent shows 10♥, 9♥: Flush
+  Fish shows 10♦, 7♠: One Pair
+  Main Agent wins $60.00
+
+--- Hand #14 ---
+Winner: Fish ($99.60) - Trips
+Player 1 cards: A♥ K♦
+Player 2 cards: Q♦ 5♣
+Board: 7♠ 4♣ 3♦ 5♦ 5♠
+Stacks: P1 $1254.20 -> $1204.40, P2 $745.80 -> $795.60
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: 7♠, 4♣, 3♦
+  Fish checks
+  Main Agent raises to $19.80
+  Fish calls $19.80
+  TURN: 5♦
+  Fish checks
+  Main Agent checks
+  RIVER: 5♠
+  Fish checks
+  Main Agent checks
+  Main Agent shows A♥, K♦: One Pair
+  Fish shows Q♦, 5♣: Trips
+  Fish wins $99.60
+
+--- Hand #15 ---
+Winner: Main Agent ($60.00) - One Pair
+Player 1 cards: Q♠ A♦
+Player 2 cards: K♣ 10♣
+Board: 9♠ A♣ 8♥ K♦ 7♣
+Stacks: P1 $1204.40 -> $1234.40, P2 $795.60 -> $765.60
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: 9♠, A♣, 8♥
+  Main Agent checks
+  Fish checks
+  TURN: K♦
+  Main Agent checks
+  Fish checks
+  RIVER: 7♣
+  Main Agent checks
+  Fish checks
+  Main Agent shows Q♠, A♦: One Pair
+  Fish shows K♣, 10♣: One Pair
+  Main Agent wins $60.00
+
+--- Hand #16 ---
+Winner: Fish ($15.00) - opponent folded
+Player 1 cards: 9♥ 4♥
+Player 2 cards: 7♠ 6♥
+Board: 
+Stacks: P1 $1234.40 -> $1229.40, P2 $765.60 -> $770.60
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent folds
+  Fish wins $15.00
+
+--- Hand #17 ---
+Winner: Main Agent ($20.00) - Two Pair
+Player 1 cards: 6♦ J♦
+Player 2 cards: 9♦ J♥
+Board: K♣ 10♥ J♣ 6♥ 5♥
+Stacks: P1 $1229.40 -> $1239.40, P2 $770.60 -> $760.60
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent checks
+  FLOP: K♣, 10♥, J♣
+  Main Agent checks
+  Fish checks
+  TURN: 6♥
+  Main Agent checks
+  Fish checks
+  RIVER: 5♥
+  Main Agent checks
+  Fish checks
+  Main Agent shows 6♦, J♦: Two Pair
+  Fish shows 9♦, J♥: One Pair
+  Main Agent wins $20.00
+
+--- Hand #18 ---
+Winner: Main Agent ($360.00) - Two Pair
+Player 1 cards: 6♦ A♣
+Player 2 cards: 4♦ 10♥
+Board: 5♠ 5♥ K♣ 6♠ 7♦
+Stacks: P1 $1239.40 -> $1419.40, P2 $760.60 -> $580.60
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: 5♠, 5♥, K♣
+  Fish checks
+  Main Agent raises to $30.00
+  Fish calls $30.00
+  TURN: 6♠
+  Fish checks
+  Main Agent raises to $120.00
+  Fish calls $120.00
+  RIVER: 7♦
+  Fish checks
+  Main Agent checks
+  Main Agent shows 6♦, A♣: Two Pair
+  Fish shows 4♦, 10♥: One Pair
+  Main Agent wins $360.00
+
+--- Hand #19 ---
+Winner: Fish ($60.00) - One Pair
+Player 1 cards: 7♣ A♦
+Player 2 cards: 6♦ 7♥
+Board: 3♥ J♣ 8♣ 6♠ 5♥
+Stacks: P1 $1419.40 -> $1389.40, P2 $580.60 -> $610.60
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: 3♥, J♣, 8♣
+  Main Agent checks
+  Fish checks
+  TURN: 6♠
+  Main Agent checks
+  Fish checks
+  RIVER: 5♥
+  Main Agent checks
+  Fish checks
+  Main Agent shows 7♣, A♦: High Card
+  Fish shows 6♦, 7♥: One Pair
+  Fish wins $60.00
+
+--- Hand #20 ---
+Winner: Fish ($15.00) - opponent folded
+Player 1 cards: Q♦ 4♠
+Player 2 cards: J♣ Q♣
+Board: 
+Stacks: P1 $1389.40 -> $1384.40, P2 $610.60 -> $615.60
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent folds
+  Fish wins $15.00
+
+--- Hand #21 ---
+Winner: Fish ($20.00) - One Pair
+Player 1 cards: 3♣ 4♦
+Player 2 cards: J♣ 5♠
+Board: 6♥ J♦ 10♠ K♣ 9♠
+Stacks: P1 $1384.40 -> $1374.40, P2 $615.60 -> $625.60
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent checks
+  FLOP: 6♥, J♦, 10♠
+  Main Agent checks
+  Fish checks
+  TURN: K♣
+  Main Agent checks
+  Fish checks
+  RIVER: 9♠
+  Main Agent checks
+  Fish checks
+  Main Agent shows 3♣, 4♦: High Card
+  Fish shows J♣, 5♠: One Pair
+  Fish wins $20.00
+
+--- Hand #22 ---
+Winner: Fish ($15.00) - opponent folded
+Player 1 cards: 2♠ 7♥
+Player 2 cards: 9♣ 8♥
+Board: 
+Stacks: P1 $1374.40 -> $1369.40, P2 $625.60 -> $630.60
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent folds
+  Fish wins $15.00
+
+--- Hand #23 ---
+Winner: Fish ($20.00) - Two Pair
+Player 1 cards: 10♥ 2♣
+Player 2 cards: 7♣ A♥
+Board: 7♠ A♣ 6♣ K♥ 3♣
+Stacks: P1 $1369.40 -> $1359.40, P2 $630.60 -> $640.60
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent checks
+  FLOP: 7♠, A♣, 6♣
+  Main Agent checks
+  Fish checks
+  TURN: K♥
+  Main Agent checks
+  Fish checks
+  RIVER: 3♣
+  Main Agent checks
+  Fish checks
+  Main Agent shows 10♥, 2♣: High Card
+  Fish shows 7♣, A♥: Two Pair
+  Fish wins $20.00
+
+--- Hand #24 ---
+Winner: Main Agent ($99.60) - Two Pair
+Player 1 cards: 7♦ K♦
+Player 2 cards: J♠ 3♥
+Board: 3♣ 5♥ 10♣ 5♣ 7♣
+Stacks: P1 $1359.40 -> $1409.20, P2 $640.60 -> $590.80
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: 3♣, 5♥, 10♣
+  Fish checks
+  Main Agent raises to $19.80
+  Fish calls $19.80
+  TURN: 5♣
+  Fish checks
+  Main Agent checks
+  RIVER: 7♣
+  Fish checks
+  Main Agent checks
+  Main Agent shows 7♦, K♦: Two Pair
+  Fish shows J♠, 3♥: Two Pair
+  Main Agent wins $99.60
+
+--- Hand #25 ---
+Winner: Main Agent ($20.00) - One Pair
+Player 1 cards: 6♣ J♣
+Player 2 cards: 9♣ 5♣
+Board: 10♠ 3♣ 8♠ 4♣ 8♥
+Stacks: P1 $1409.20 -> $1419.20, P2 $590.80 -> $580.80
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent checks
+  FLOP: 10♠, 3♣, 8♠
+  Main Agent checks
+  Fish checks
+  TURN: 4♣
+  Main Agent checks
+  Fish checks
+  RIVER: 8♥
+  Main Agent checks
+  Fish checks
+  Main Agent shows 6♣, J♣: One Pair
+  Fish shows 9♣, 5♣: One Pair
+  Main Agent wins $20.00
+
+--- Hand #26 ---
+Winner: Fish ($15.00) - opponent folded
+Player 1 cards: 5♦ Q♥
+Player 2 cards: 6♣ 10♣
+Board: 
+Stacks: P1 $1419.20 -> $1414.20, P2 $580.80 -> $585.80
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent folds
+  Fish wins $15.00
+
+--- Hand #27 ---
+Winner: Main Agent ($60.00) - Two Pair
+Player 1 cards: 4♥ Q♥
+Player 2 cards: 8♠ 6♣
+Board: 10♦ 4♣ J♥ A♥ A♠
+Stacks: P1 $1414.20 -> $1444.20, P2 $585.80 -> $555.80
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: 10♦, 4♣, J♥
+  Main Agent checks
+  Fish checks
+  TURN: A♥
+  Main Agent checks
+  Fish checks
+  RIVER: A♠
+  Main Agent checks
+  Fish checks
+  Main Agent shows 4♥, Q♥: Two Pair
+  Fish shows 8♠, 6♣: One Pair
+  Main Agent wins $60.00
+
+--- Hand #28 ---
+Winner: Fish ($298.80) - Two Pair
+Player 1 cards: 5♥ 5♠
+Player 2 cards: 10♠ 10♣
+Board: 9♦ 9♠ 6♠ 4♦ 8♦
+Stacks: P1 $1444.20 -> $1294.80, P2 $555.80 -> $705.20
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: 9♦, 9♠, 6♠
+  Fish checks
+  Main Agent raises to $19.80
+  Fish calls $19.80
+  TURN: 4♦
+  Fish checks
+  Main Agent raises to $99.60
+  Fish calls $99.60
+  RIVER: 8♦
+  Fish checks
+  Main Agent checks
+  Main Agent shows 5♥, 5♠: Two Pair
+  Fish shows 10♠, 10♣: Two Pair
+  Fish wins $298.80
+
+--- Hand #29 ---
+Winner: Main Agent ($60.00) - Two Pair
+Player 1 cards: 4♣ Q♣
+Player 2 cards: J♦ 9♣
+Board: 3♦ 4♦ 3♥ 10♥ A♥
+Stacks: P1 $1294.80 -> $1324.80, P2 $705.20 -> $675.20
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: 3♦, 4♦, 3♥
+  Main Agent checks
+  Fish checks
+  TURN: 10♥
+  Main Agent checks
+  Fish checks
+  RIVER: A♥
+  Main Agent checks
+  Fish checks
+  Main Agent shows 4♣, Q♣: Two Pair
+  Fish shows J♦, 9♣: One Pair
+  Main Agent wins $60.00
+
+--- Hand #30 ---
+Winner: Fish ($15.00) - opponent folded
+Player 1 cards: 3♥ 8♠
+Player 2 cards: J♥ J♦
+Board: 
+Stacks: P1 $1324.80 -> $1319.80, P2 $675.20 -> $680.20
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent folds
+  Fish wins $15.00
+
+--- Hand #31 ---
+Winner: Main Agent ($20.00) - One Pair
+Player 1 cards: 6♥ 4♦
+Player 2 cards: 5♣ 3♦
+Board: A♦ K♣ 2♦ 2♥ 9♠
+Stacks: P1 $1319.80 -> $1329.80, P2 $680.20 -> $670.20
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent checks
+  FLOP: A♦, K♣, 2♦
+  Main Agent checks
+  Fish checks
+  TURN: 2♥
+  Main Agent checks
+  Fish checks
+  RIVER: 9♠
+  Main Agent checks
+  Fish checks
+  Main Agent shows 6♥, 4♦: One Pair
+  Fish shows 5♣, 3♦: One Pair
+  Main Agent wins $20.00
+
+--- Hand #32 ---
+Winner: Fish ($15.00) - opponent folded
+Player 1 cards: 6♠ 9♥
+Player 2 cards: Q♦ 3♦
+Board: 
+Stacks: P1 $1329.80 -> $1324.80, P2 $670.20 -> $675.20
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent folds
+  Fish wins $15.00
+
+--- Hand #33 ---
+Winner: Fish ($60.00) - Straight
+Player 1 cards: J♣ A♣
+Player 2 cards: 4♣ 6♠
+Board: 3♣ 7♦ 5♦ K♦ 6♣
+Stacks: P1 $1324.80 -> $1294.80, P2 $675.20 -> $705.20
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: 3♣, 7♦, 5♦
+  Main Agent checks
+  Fish checks
+  TURN: K♦
+  Main Agent checks
+  Fish checks
+  RIVER: 6♣
+  Main Agent checks
+  Fish checks
+  Main Agent shows J♣, A♣: High Card
+  Fish shows 4♣, 6♠: Straight
+  Fish wins $60.00
+
+--- Hand #34 ---
+Winner: Fish ($15.00) - opponent folded
+Player 1 cards: 8♦ J♠
+Player 2 cards: 5♠ 4♦
+Board: 
+Stacks: P1 $1294.80 -> $1289.80, P2 $705.20 -> $710.20
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent folds
+  Fish wins $15.00
+
+--- Hand #35 ---
+Winner: Main Agent ($20.00) - Straight
+Player 1 cards: 8♥ J♦
+Player 2 cards: K♥ 4♣
+Board: 10♠ 5♣ 7♣ 9♦ 3♦
+Stacks: P1 $1289.80 -> $1299.80, P2 $710.20 -> $700.20
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent checks
+  FLOP: 10♠, 5♣, 7♣
+  Main Agent checks
+  Fish checks
+  TURN: 9♦
+  Main Agent checks
+  Fish checks
+  RIVER: 3♦
+  Main Agent checks
+  Fish checks
+  Main Agent shows 8♥, J♦: Straight
+  Fish shows K♥, 4♣: High Card
+  Main Agent wins $20.00
+
+--- Hand #36 ---
+Winner: Fish ($120.00) - Two Pair
+Player 1 cards: J♣ 10♣
+Player 2 cards: 4♦ 3♥
+Board: 4♥ 8♥ 6♦ Q♥ Q♣
+Stacks: P1 $1299.80 -> $1239.80, P2 $700.20 -> $760.20
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: 4♥, 8♥, 6♦
+  Fish checks
+  Main Agent raises to $30.00
+  Fish calls $30.00
+  TURN: Q♥
+  Fish checks
+  Main Agent checks
+  RIVER: Q♣
+  Fish checks
+  Main Agent checks
+  Main Agent shows J♣, 10♣: One Pair
+  Fish shows 4♦, 3♥: Two Pair
+  Fish wins $120.00
+
+--- Hand #37 ---
+Winner: Main Agent ($20.00) - Two Pair
+Player 1 cards: 7♠ Q♥
+Player 2 cards: 3♥ 3♠
+Board: 8♠ 8♣ 4♣ J♠ 4♠
+Stacks: P1 $1239.80 -> $1249.80, P2 $760.20 -> $750.20
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent checks
+  FLOP: 8♠, 8♣, 4♣
+  Main Agent checks
+  Fish checks
+  TURN: J♠
+  Main Agent checks
+  Fish checks
+  RIVER: 4♠
+  Main Agent checks
+  Fish checks
+  Main Agent shows 7♠, Q♥: Two Pair
+  Fish shows 3♥, 3♠: Two Pair
+  Main Agent wins $20.00
+
+--- Hand #38 ---
+Winner: Fish ($15.00) - opponent folded
+Player 1 cards: 7♥ 3♦
+Player 2 cards: 2♠ 2♣
+Board: 
+Stacks: P1 $1249.80 -> $1244.80, P2 $750.20 -> $755.20
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent folds
+  Fish wins $15.00
+
+--- Hand #39 ---
+Winner: Fish ($60.00) - Two Pair
+Player 1 cards: A♠ 4♠
+Player 2 cards: A♣ K♣
+Board: 8♥ 8♦ A♥ 6♦ J♣
+Stacks: P1 $1244.80 -> $1214.80, P2 $755.20 -> $785.20
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: 8♥, 8♦, A♥
+  Main Agent checks
+  Fish checks
+  TURN: 6♦
+  Main Agent checks
+  Fish checks
+  RIVER: J♣
+  Main Agent checks
+  Fish checks
+  Main Agent shows A♠, 4♠: Two Pair
+  Fish shows A♣, K♣: Two Pair
+  Fish wins $60.00
+
+--- Hand #40 ---
+Winner: Fish ($15.00) - opponent folded
+Player 1 cards: Q♠ 7♣
+Player 2 cards: 4♦ J♥
+Board: 
+Stacks: P1 $1214.80 -> $1209.80, P2 $785.20 -> $790.20
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent folds
+  Fish wins $15.00
+
+--- Hand #41 ---
+Winner: Main Agent ($20.00) - One Pair
+Player 1 cards: 7♦ 9♦
+Player 2 cards: K♥ J♦
+Board: 5♥ 9♣ 4♦ 2♣ A♣
+Stacks: P1 $1209.80 -> $1219.80, P2 $790.20 -> $780.20
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent checks
+  FLOP: 5♥, 9♣, 4♦
+  Main Agent checks
+  Fish checks
+  TURN: 2♣
+  Main Agent checks
+  Fish checks
+  RIVER: A♣
+  Main Agent checks
+  Fish checks
+  Main Agent shows 7♦, 9♦: One Pair
+  Fish shows K♥, J♦: High Card
+  Main Agent wins $20.00
+
+--- Hand #42 ---
+Winner: Fish ($99.60) - Two Pair
+Player 1 cards: A♥ 8♣
+Player 2 cards: 9♣ 6♦
+Board: 2♦ Q♣ Q♦ 10♠ 6♣
+Stacks: P1 $1219.80 -> $1170.00, P2 $780.20 -> $830.00
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: 2♦, Q♣, Q♦
+  Fish checks
+  Main Agent raises to $19.80
+  Fish calls $19.80
+  TURN: 10♠
+  Fish checks
+  Main Agent checks
+  RIVER: 6♣
+  Fish checks
+  Main Agent checks
+  Main Agent shows A♥, 8♣: One Pair
+  Fish shows 9♣, 6♦: Two Pair
+  Fish wins $99.60
+
+--- Hand #43 ---
+Winner: Fish ($20.00) - Straight
+Player 1 cards: Q♦ 4♠
+Player 2 cards: 3♠ 7♠
+Board: 4♣ A♣ 5♥ 2♥ 2♦
+Stacks: P1 $1170.00 -> $1160.00, P2 $830.00 -> $840.00
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent checks
+  FLOP: 4♣, A♣, 5♥
+  Main Agent checks
+  Fish checks
+  TURN: 2♥
+  Main Agent checks
+  Fish checks
+  RIVER: 2♦
+  Main Agent checks
+  Fish checks
+  Main Agent shows Q♦, 4♠: Two Pair
+  Fish shows 3♠, 7♠: Straight
+  Fish wins $20.00
+
+--- Hand #44 ---
+Winner: Fish ($120.00) - Two Pair
+Player 1 cards: J♠ 8♠
+Player 2 cards: 5♠ 7♥
+Board: 2♣ 2♦ 4♥ 9♥ 5♣
+Stacks: P1 $1160.00 -> $1100.00, P2 $840.00 -> $900.00
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: 2♣, 2♦, 4♥
+  Fish checks
+  Main Agent raises to $30.00
+  Fish calls $30.00
+  TURN: 9♥
+  Fish checks
+  Main Agent checks
+  RIVER: 5♣
+  Fish checks
+  Main Agent checks
+  Main Agent shows J♠, 8♠: One Pair
+  Fish shows 5♠, 7♥: Two Pair
+  Fish wins $120.00
+
+--- Hand #45 ---
+Winner: Fish ($20.00) - One Pair
+Player 1 cards: 8♦ 4♦
+Player 2 cards: J♣ J♦
+Board: 2♣ 6♣ 9♣ 10♠ A♥
+Stacks: P1 $1100.00 -> $1090.00, P2 $900.00 -> $910.00
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent checks
+  FLOP: 2♣, 6♣, 9♣
+  Main Agent checks
+  Fish checks
+  TURN: 10♠
+  Main Agent checks
+  Fish checks
+  RIVER: A♥
+  Main Agent checks
+  Fish checks
+  Main Agent shows 8♦, 4♦: High Card
+  Fish shows J♣, J♦: One Pair
+  Fish wins $20.00
+
+--- Hand #46 ---
+Winner: Fish ($15.00) - opponent folded
+Player 1 cards: 10♥ 6♣
+Player 2 cards: 9♠ 2♦
+Board: 
+Stacks: P1 $1090.00 -> $1085.00, P2 $910.00 -> $915.00
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent folds
+  Fish wins $15.00
+
+--- Hand #47 ---
+Winner: Fish ($60.00) - Flush
+Player 1 cards: 5♦ 10♦
+Player 2 cards: 10♥ K♣
+Board: 6♣ 9♣ 4♣ 2♣ A♠
+Stacks: P1 $1085.00 -> $1055.00, P2 $915.00 -> $945.00
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: 6♣, 9♣, 4♣
+  Main Agent checks
+  Fish checks
+  TURN: 2♣
+  Main Agent checks
+  Fish checks
+  RIVER: A♠
+  Main Agent checks
+  Fish checks
+  Main Agent shows 5♦, 10♦: High Card
+  Fish shows 10♥, K♣: Flush
+  Fish wins $60.00
+
+--- Hand #48 ---
+Winner: Main Agent ($99.60) - One Pair
+Player 1 cards: 10♠ 8♠
+Player 2 cards: 2♣ 10♣
+Board: 4♥ 9♣ 5♠ 9♦ 3♣
+Stacks: P1 $1055.00 -> $1104.80, P2 $945.00 -> $895.20
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: 4♥, 9♣, 5♠
+  Fish checks
+  Main Agent raises to $19.80
+  Fish calls $19.80
+  TURN: 9♦
+  Fish checks
+  Main Agent checks
+  RIVER: 3♣
+  Fish checks
+  Main Agent checks
+  Main Agent shows 10♠, 8♠: One Pair
+  Fish shows 2♣, 10♣: One Pair
+  Main Agent wins $99.60
+
+--- Hand #49 ---
+Winner: Main Agent ($60.00) - Two Pair
+Player 1 cards: 10♥ 7♥
+Player 2 cards: 5♦ 4♣
+Board: 9♦ 7♦ 10♠ Q♣ A♠
+Stacks: P1 $1104.80 -> $1134.80, P2 $895.20 -> $865.20
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: 9♦, 7♦, 10♠
+  Main Agent checks
+  Fish checks
+  TURN: Q♣
+  Main Agent checks
+  Fish checks
+  RIVER: A♠
+  Main Agent checks
+  Fish checks
+  Main Agent shows 10♥, 7♥: Two Pair
+  Fish shows 5♦, 4♣: High Card
+  Main Agent wins $60.00
+
+--- Hand #50 ---
+Winner: Fish ($15.00) - opponent folded
+Player 1 cards: 5♥ 4♣
+Player 2 cards: Q♥ 7♣
+Board: 
+Stacks: P1 $1134.80 -> $1129.80, P2 $865.20 -> $870.20
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent folds
+  Fish wins $15.00
+
+--- Hand #51 ---
+Winner: Fish ($60.00) - Boat
+Player 1 cards: 8♣ K♦
+Player 2 cards: 7♦ 7♠
+Board: 4♦ 5♠ 5♦ 10♣ 7♣
+Stacks: P1 $1129.80 -> $1099.80, P2 $870.20 -> $900.20
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: 4♦, 5♠, 5♦
+  Main Agent checks
+  Fish checks
+  TURN: 10♣
+  Main Agent checks
+  Fish checks
+  RIVER: 7♣
+  Main Agent checks
+  Fish checks
+  Main Agent shows 8♣, K♦: One Pair
+  Fish shows 7♦, 7♠: Boat
+  Fish wins $60.00
+
+--- Hand #52 ---
+Winner: Fish ($15.00) - opponent folded
+Player 1 cards: 4♣ J♥
+Player 2 cards: 9♠ K♠
+Board: 
+Stacks: P1 $1099.80 -> $1094.80, P2 $900.20 -> $905.20
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent folds
+  Fish wins $15.00
+
+--- Hand #53 ---
+Winner: Main Agent ($20.00) - Straight
+Player 1 cards: 8♦ 7♥
+Player 2 cards: 3♥ 9♣
+Board: 9♥ 10♣ A♦ J♣ 8♥
+Stacks: P1 $1094.80 -> $1104.80, P2 $905.20 -> $895.20
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent checks
+  FLOP: 9♥, 10♣, A♦
+  Main Agent checks
+  Fish checks
+  TURN: J♣
+  Main Agent checks
+  Fish checks
+  RIVER: 8♥
+  Main Agent checks
+  Fish checks
+  Main Agent shows 8♦, 7♥: Straight
+  Fish shows 3♥, 9♣: One Pair
+  Main Agent wins $20.00
+
+--- Hand #54 ---
+Winner: Fish ($15.00) - opponent folded
+Player 1 cards: 5♥ 2♥
+Player 2 cards: 10♥ 4♣
+Board: 
+Stacks: P1 $1104.80 -> $1099.80, P2 $895.20 -> $900.20
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent folds
+  Fish wins $15.00
+
+--- Hand #55 ---
+Winner: Fish ($20.00) - Two Pair
+Player 1 cards: J♣ 9♥
+Player 2 cards: 2♥ Q♥
+Board: 2♦ 4♠ Q♦ J♠ 5♥
+Stacks: P1 $1099.80 -> $1089.80, P2 $900.20 -> $910.20
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent checks
+  FLOP: 2♦, 4♠, Q♦
+  Main Agent checks
+  Fish checks
+  TURN: J♠
+  Main Agent checks
+  Fish checks
+  RIVER: 5♥
+  Main Agent checks
+  Fish checks
+  Main Agent shows J♣, 9♥: One Pair
+  Fish shows 2♥, Q♥: Two Pair
+  Fish wins $20.00
+
+--- Hand #56 ---
+Winner: Fish ($15.00) - opponent folded
+Player 1 cards: 3♣ 3♥
+Player 2 cards: 6♠ 8♣
+Board: 
+Stacks: P1 $1089.80 -> $1084.80, P2 $910.20 -> $915.20
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent folds
+  Fish wins $15.00
+
+--- Hand #57 ---
+Winner: Main Agent ($20.00) - One Pair
+Player 1 cards: 8♥ 6♣
+Player 2 cards: 7♠ 4♣
+Board: 4♠ Q♣ A♥ K♣ 6♦
+Stacks: P1 $1084.80 -> $1094.80, P2 $915.20 -> $905.20
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent checks
+  FLOP: 4♠, Q♣, A♥
+  Main Agent checks
+  Fish checks
+  TURN: K♣
+  Main Agent checks
+  Fish checks
+  RIVER: 6♦
+  Main Agent checks
+  Fish checks
+  Main Agent shows 8♥, 6♣: One Pair
+  Fish shows 7♠, 4♣: One Pair
+  Main Agent wins $20.00
+
+--- Hand #58 ---
+Winner: Fish ($120.00) - One Pair
+Player 1 cards: K♥ J♣
+Player 2 cards: 10♣ 10♠
+Board: 9♣ 7♠ 8♦ 5♠ 3♦
+Stacks: P1 $1094.80 -> $1034.80, P2 $905.20 -> $965.20
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: 9♣, 7♠, 8♦
+  Fish checks
+  Main Agent raises to $30.00
+  Fish calls $30.00
+  TURN: 5♠
+  Fish checks
+  Main Agent checks
+  RIVER: 3♦
+  Fish checks
+  Main Agent checks
+  Main Agent shows K♥, J♣: High Card
+  Fish shows 10♣, 10♠: One Pair
+  Fish wins $120.00
+
+--- Hand #59 ---
+Winner: Main Agent ($20.00) - One Pair
+Player 1 cards: 6♥ 8♠
+Player 2 cards: 10♠ 7♠
+Board: 3♦ 4♦ J♦ 8♦ K♣
+Stacks: P1 $1034.80 -> $1044.80, P2 $965.20 -> $955.20
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent checks
+  FLOP: 3♦, 4♦, J♦
+  Main Agent checks
+  Fish checks
+  TURN: 8♦
+  Main Agent checks
+  Fish checks
+  RIVER: K♣
+  Main Agent checks
+  Fish checks
+  Main Agent shows 6♥, 8♠: One Pair
+  Fish shows 10♠, 7♠: High Card
+  Main Agent wins $20.00
+
+--- Hand #60 ---
+Winner: Fish ($15.00) - opponent folded
+Player 1 cards: A♦ 2♣
+Player 2 cards: A♠ 5♦
+Board: 
+Stacks: P1 $1044.80 -> $1039.80, P2 $955.20 -> $960.20
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent folds
+  Fish wins $15.00
+
+--- Hand #61 ---
+Winner: Main Agent ($60.00) - One Pair
+Player 1 cards: K♣ A♣
+Player 2 cards: 2♦ 6♣
+Board: 10♠ 3♣ 8♥ 5♥ 3♦
+Stacks: P1 $1039.80 -> $1069.80, P2 $960.20 -> $930.20
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: 10♠, 3♣, 8♥
+  Main Agent checks
+  Fish checks
+  TURN: 5♥
+  Main Agent checks
+  Fish checks
+  RIVER: 3♦
+  Main Agent checks
+  Fish checks
+  Main Agent shows K♣, A♣: One Pair
+  Fish shows 2♦, 6♣: One Pair
+  Main Agent wins $60.00
+
+--- Hand #62 ---
+Winner: Fish ($15.00) - opponent folded
+Player 1 cards: J♥ 3♠
+Player 2 cards: 6♦ 8♠
+Board: 
+Stacks: P1 $1069.80 -> $1064.80, P2 $930.20 -> $935.20
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent folds
+  Fish wins $15.00
+
+--- Hand #63 ---
+Winner: Main Agent ($60.00) - One Pair
+Player 1 cards: 4♦ K♦
+Player 2 cards: 3♦ K♥
+Board: 8♣ 2♥ 9♣ 6♠ 8♠
+Stacks: P1 $1064.80 -> $1094.80, P2 $935.20 -> $905.20
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: 8♣, 2♥, 9♣
+  Main Agent checks
+  Fish checks
+  TURN: 6♠
+  Main Agent checks
+  Fish checks
+  RIVER: 8♠
+  Main Agent checks
+  Fish checks
+  Main Agent shows 4♦, K♦: One Pair
+  Fish shows 3♦, K♥: One Pair
+  Main Agent wins $60.00
+
+--- Hand #64 ---
+Winner: Fish ($15.00) - opponent folded
+Player 1 cards: 3♦ K♠
+Player 2 cards: 7♦ 3♣
+Board: 
+Stacks: P1 $1094.80 -> $1089.80, P2 $905.20 -> $910.20
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent folds
+  Fish wins $15.00
+
+--- Hand #65 ---
+Winner: Main Agent ($20.00) - One Pair
+Player 1 cards: Q♦ 9♠
+Player 2 cards: 6♥ 10♦
+Board: J♣ 4♠ 4♦ 2♥ 8♠
+Stacks: P1 $1089.80 -> $1099.80, P2 $910.20 -> $900.20
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent checks
+  FLOP: J♣, 4♠, 4♦
+  Main Agent checks
+  Fish checks
+  TURN: 2♥
+  Main Agent checks
+  Fish checks
+  RIVER: 8♠
+  Main Agent checks
+  Fish checks
+  Main Agent shows Q♦, 9♠: One Pair
+  Fish shows 6♥, 10♦: One Pair
+  Main Agent wins $20.00
+
+--- Hand #66 ---
+Winner: Fish ($15.00) - opponent folded
+Player 1 cards: 8♦ 6♣
+Player 2 cards: 8♠ 10♠
+Board: 
+Stacks: P1 $1099.80 -> $1094.80, P2 $900.20 -> $905.20
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent folds
+  Fish wins $15.00
+
+--- Hand #67 ---
+Winner: Fish ($60.00) - High Card
+Player 1 cards: 10♥ J♦
+Player 2 cards: Q♦ 10♠
+Board: 7♦ A♣ 6♣ 4♠ 3♣
+Stacks: P1 $1094.80 -> $1064.80, P2 $905.20 -> $935.20
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: 7♦, A♣, 6♣
+  Main Agent checks
+  Fish checks
+  TURN: 4♠
+  Main Agent checks
+  Fish checks
+  RIVER: 3♣
+  Main Agent checks
+  Fish checks
+  Main Agent shows 10♥, J♦: High Card
+  Fish shows Q♦, 10♠: High Card
+  Fish wins $60.00
+
+--- Hand #68 ---
+Winner: Fish ($15.00) - opponent folded
+Player 1 cards: 9♦ 6♣
+Player 2 cards: 4♦ 2♠
+Board: 
+Stacks: P1 $1064.80 -> $1059.80, P2 $935.20 -> $940.20
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent folds
+  Fish wins $15.00
+
+--- Hand #69 ---
+Winner: Main Agent ($60.00) - One Pair
+Player 1 cards: 9♥ K♣
+Player 2 cards: 10♠ 4♥
+Board: 4♣ 7♠ J♣ A♦ 9♣
+Stacks: P1 $1059.80 -> $1089.80, P2 $940.20 -> $910.20
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: 4♣, 7♠, J♣
+  Main Agent checks
+  Fish checks
+  TURN: A♦
+  Main Agent checks
+  Fish checks
+  RIVER: 9♣
+  Main Agent checks
+  Fish checks
+  Main Agent shows 9♥, K♣: One Pair
+  Fish shows 10♠, 4♥: One Pair
+  Main Agent wins $60.00
+
+--- Hand #70 ---
+Winner: Fish ($15.00) - opponent folded
+Player 1 cards: 2♠ 5♥
+Player 2 cards: 2♥ 4♠
+Board: 
+Stacks: P1 $1089.80 -> $1084.80, P2 $910.20 -> $915.20
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent folds
+  Fish wins $15.00
+
+--- Hand #71 ---
+Winner: Fish ($20.00) - Two Pair
+Player 1 cards: 7♣ 2♠
+Player 2 cards: Q♠ 7♦
+Board: 9♦ 9♣ 5♥ Q♥ 6♥
+Stacks: P1 $1084.80 -> $1074.80, P2 $915.20 -> $925.20
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent checks
+  FLOP: 9♦, 9♣, 5♥
+  Main Agent checks
+  Fish checks
+  TURN: Q♥
+  Main Agent checks
+  Fish checks
+  RIVER: 6♥
+  Main Agent checks
+  Fish checks
+  Main Agent shows 7♣, 2♠: One Pair
+  Fish shows Q♠, 7♦: Two Pair
+  Fish wins $20.00
+
+--- Hand #72 ---
+Winner: Fish ($15.00) - opponent folded
+Player 1 cards: 4♥ 2♦
+Player 2 cards: 9♣ 9♥
+Board: 
+Stacks: P1 $1074.80 -> $1069.80, P2 $925.20 -> $930.20
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent folds
+  Fish wins $15.00
+
+--- Hand #73 ---
+Winner: Main Agent ($20.00) - One Pair
+Player 1 cards: 9♦ 4♥
+Player 2 cards: 2♦ 7♦
+Board: J♠ 8♣ 6♥ 4♠ A♣
+Stacks: P1 $1069.80 -> $1079.80, P2 $930.20 -> $920.20
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent checks
+  FLOP: J♠, 8♣, 6♥
+  Main Agent checks
+  Fish checks
+  TURN: 4♠
+  Main Agent checks
+  Fish checks
+  RIVER: A♣
+  Main Agent checks
+  Fish checks
+  Main Agent shows 9♦, 4♥: One Pair
+  Fish shows 2♦, 7♦: High Card
+  Main Agent wins $20.00
+
+--- Hand #74 ---
+Winner: Fish ($15.00) - opponent folded
+Player 1 cards: Q♣ 2♥
+Player 2 cards: 4♦ 8♥
+Board: 
+Stacks: P1 $1079.80 -> $1074.80, P2 $920.20 -> $925.20
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent folds
+  Fish wins $15.00
+
+--- Hand #75 ---
+Winner: Main Agent ($60.00) - Flush
+Player 1 cards: 6♠ A♠
+Player 2 cards: 4♣ 4♦
+Board: 7♠ 10♥ 9♠ 5♦ Q♠
+Stacks: P1 $1074.80 -> $1104.80, P2 $925.20 -> $895.20
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: 7♠, 10♥, 9♠
+  Main Agent checks
+  Fish checks
+  TURN: 5♦
+  Main Agent checks
+  Fish checks
+  RIVER: Q♠
+  Main Agent checks
+  Fish checks
+  Main Agent shows 6♠, A♠: Flush
+  Fish shows 4♣, 4♦: One Pair
+  Main Agent wins $60.00
+
+--- Hand #76 ---
+Winner: Fish ($120.00) - Two Pair
+Player 1 cards: 6♦ 10♦
+Player 2 cards: 7♦ J♥
+Board: 8♦ 9♥ K♥ K♠ 8♣
+Stacks: P1 $1104.80 -> $1044.80, P2 $895.20 -> $955.20
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: 8♦, 9♥, K♥
+  Fish checks
+  Main Agent raises to $30.00
+  Fish calls $30.00
+  TURN: K♠
+  Fish checks
+  Main Agent checks
+  RIVER: 8♣
+  Fish checks
+  Main Agent checks
+  Main Agent shows 6♦, 10♦: Two Pair
+  Fish shows 7♦, J♥: Two Pair
+  Fish wins $120.00
+
+--- Hand #77 ---
+Winner: Fish ($20.00) - Two Pair
+Player 1 cards: 4♠ 7♠
+Player 2 cards: 5♠ 3♥
+Board: J♣ 3♠ 9♦ 2♠ 2♣
+Stacks: P1 $1044.80 -> $1034.80, P2 $955.20 -> $965.20
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent checks
+  FLOP: J♣, 3♠, 9♦
+  Main Agent checks
+  Fish checks
+  TURN: 2♠
+  Main Agent checks
+  Fish checks
+  RIVER: 2♣
+  Main Agent checks
+  Fish checks
+  Main Agent shows 4♠, 7♠: One Pair
+  Fish shows 5♠, 3♥: Two Pair
+  Fish wins $20.00
+
+--- Hand #78 ---
+Winner: Fish ($15.00) - opponent folded
+Player 1 cards: 9♣ 7♣
+Player 2 cards: 7♥ 10♠
+Board: 
+Stacks: P1 $1034.80 -> $1029.80, P2 $965.20 -> $970.20
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent folds
+  Fish wins $15.00
+
+--- Hand #79 ---
+Winner: Fish ($60.00) - Two Pair
+Player 1 cards: J♥ 10♦
+Player 2 cards: K♥ 8♠
+Board: Q♦ 4♣ 6♣ Q♠ 6♠
+Stacks: P1 $1029.80 -> $999.80, P2 $970.20 -> $1000.20
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: Q♦, 4♣, 6♣
+  Main Agent checks
+  Fish checks
+  TURN: Q♠
+  Main Agent checks
+  Fish checks
+  RIVER: 6♠
+  Main Agent checks
+  Fish checks
+  Main Agent shows J♥, 10♦: Two Pair
+  Fish shows K♥, 8♠: Two Pair
+  Fish wins $60.00
+
+--- Hand #80 ---
+Winner: Main Agent ($360.00) - One Pair
+Player 1 cards: A♥ Q♦
+Player 2 cards: J♦ 7♦
+Board: 5♠ Q♥ 2♠ 7♠ 3♣
+Stacks: P1 $999.80 -> $1179.80, P2 $1000.20 -> $820.20
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: 5♠, Q♥, 2♠
+  Fish checks
+  Main Agent raises to $30.00
+  Fish calls $30.00
+  TURN: 7♠
+  Fish checks
+  Main Agent raises to $120.00
+  Fish calls $120.00
+  RIVER: 3♣
+  Fish checks
+  Main Agent checks
+  Main Agent shows A♥, Q♦: One Pair
+  Fish shows J♦, 7♦: One Pair
+  Main Agent wins $360.00
+
+--- Hand #81 ---
+Winner: Main Agent ($60.00) - One Pair
+Player 1 cards: J♥ 10♦
+Player 2 cards: 2♦ J♣
+Board: 3♥ J♦ 5♠ 9♦ K♣
+Stacks: P1 $1179.80 -> $1209.80, P2 $820.20 -> $790.20
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: 3♥, J♦, 5♠
+  Main Agent checks
+  Fish checks
+  TURN: 9♦
+  Main Agent checks
+  Fish checks
+  RIVER: K♣
+  Main Agent checks
+  Fish checks
+  Main Agent shows J♥, 10♦: One Pair
+  Fish shows 2♦, J♣: One Pair
+  Main Agent wins $60.00
+
+--- Hand #82 ---
+Winner: Fish ($15.00) - opponent folded
+Player 1 cards: 9♠ 2♦
+Player 2 cards: J♠ Q♣
+Board: 
+Stacks: P1 $1209.80 -> $1204.80, P2 $790.20 -> $795.20
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent folds
+  Fish wins $15.00
+
+--- Hand #83 ---
+Winner: Main Agent ($20.00) - One Pair
+Player 1 cards: Q♣ 9♥
+Player 2 cards: 6♥ 9♣
+Board: A♦ 4♣ 7♠ 4♦ 10♣
+Stacks: P1 $1204.80 -> $1214.80, P2 $795.20 -> $785.20
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent checks
+  FLOP: A♦, 4♣, 7♠
+  Main Agent checks
+  Fish checks
+  TURN: 4♦
+  Main Agent checks
+  Fish checks
+  RIVER: 10♣
+  Main Agent checks
+  Fish checks
+  Main Agent shows Q♣, 9♥: One Pair
+  Fish shows 6♥, 9♣: One Pair
+  Main Agent wins $20.00
+
+--- Hand #84 ---
+Winner: Main Agent ($120.00) - Two Pair
+Player 1 cards: K♦ J♦
+Player 2 cards: J♥ Q♣
+Board: 5♥ 7♣ 7♠ 3♠ 5♠
+Stacks: P1 $1214.80 -> $1274.80, P2 $785.20 -> $725.20
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: 5♥, 7♣, 7♠
+  Fish checks
+  Main Agent raises to $30.00
+  Fish calls $30.00
+  TURN: 3♠
+  Fish checks
+  Main Agent checks
+  RIVER: 5♠
+  Fish checks
+  Main Agent checks
+  Main Agent shows K♦, J♦: Two Pair
+  Fish shows J♥, Q♣: Two Pair
+  Main Agent wins $120.00
+
+--- Hand #85 ---
+Winner: Main Agent ($20.00) - One Pair
+Player 1 cards: 5♣ Q♥
+Player 2 cards: J♦ 4♣
+Board: 10♣ 7♥ 8♥ 8♠ 6♠
+Stacks: P1 $1274.80 -> $1284.80, P2 $725.20 -> $715.20
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  Fish calls $5.00
+  Main Agent checks
+  FLOP: 10♣, 7♥, 8♥
+  Main Agent checks
+  Fish checks
+  TURN: 8♠
+  Main Agent checks
+  Fish checks
+  RIVER: 6♠
+  Main Agent checks
+  Fish checks
+  Main Agent shows 5♣, Q♥: One Pair
+  Fish shows J♦, 4♣: One Pair
+  Main Agent wins $20.00
+
+--- Hand #86 ---
+Winner: Main Agent ($2000.00) - Boat
+Player 1 cards: 8♦ 8♥
+Player 2 cards: Q♠ 5♣
+Board: K♠ 7♥ 8♠ 10♠ 10♣
+Stacks: P1 $1284.80 -> $2000.00, P2 $715.20 -> $0.00
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  Main Agent raises to $30.00
+  Fish calls $20.00
+  FLOP: K♠, 7♥, 8♠
+  Fish checks
+  Main Agent raises to $30.00
+  Fish calls $30.00
+  TURN: 10♠
+  Fish checks
+  Main Agent raises to $120.00
+  Fish calls $120.00
+  RIVER: 10♣
+  Fish checks
+  Main Agent raises to $1104.80 (all-in)
+  Fish calls $535.20 (all-in)
+  Main Agent shows 8♦, 8♥: Boat
+  Fish shows Q♠, 5♣: One Pair
+  Main Agent wins $2000.00
+
+--- Hand #87 ---
+Winner: Main Agent ($10.00) - One Pair
+Player 1 cards: 8♣ K♠
+Player 2 cards: Q♣ 7♠
+Board: 10♥ 3♣ K♣ A♣ 2♠
+Stacks: P1 $2000.00 -> $2000.00, P2 $0.00 -> $0.00
+Actions:
+  Fish posts SB $0.00
+  Main Agent posts BB $10.00
+  FLOP: 10♥, 3♣, K♣
+  TURN: A♣
+  RIVER: 2♠
+  Main Agent shows 8♣, K♠: One Pair
+  Fish shows Q♣, 7♠: High Card
+  Main Agent wins $10.00
+
+--- Hand #88 ---
+Winner: Main Agent ($5.00) - High Card
+Player 1 cards: 4♠ 8♥
+Player 2 cards: 7♥ 5♦
+Board: 9♦ A♦ 10♣ 3♦ 6♣
+Stacks: P1 $2000.00 -> $2000.00, P2 $0.00 -> $0.00
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $0.00
+  FLOP: 9♦, A♦, 10♣
+  TURN: 3♦
+  RIVER: 6♣
+  Main Agent shows 4♠, 8♥: High Card
+  Fish shows 7♥, 5♦: High Card
+  Main Agent wins $5.00
+
+--- Hand #89 ---
+Winner: Fish ($10.00) - One Pair
+Player 1 cards: 2♥ 7♣
+Player 2 cards: 6♣ 3♣
+Board: 8♥ 2♦ 5♣ K♣ 6♥
+Stacks: P1 $2000.00 -> $1990.00, P2 $0.00 -> $10.00
+Actions:
+  Fish posts SB $0.00
+  Main Agent posts BB $10.00
+  FLOP: 8♥, 2♦, 5♣
+  TURN: K♣
+  RIVER: 6♥
+  Main Agent shows 2♥, 7♣: One Pair
+  Fish shows 6♣, 3♣: One Pair
+  Fish wins $10.00
+
+--- Hand #90 ---
+Winner: Main Agent ($15.00) - Boat
+Player 1 cards: Q♣ 8♦
+Player 2 cards: 6♠ 9♣
+Board: 8♠ 5♥ 4♣ 5♦ 8♣
+Stacks: P1 $1990.00 -> $2000.00, P2 $10.00 -> $0.00
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  FLOP: 8♠, 5♥, 4♣
+  TURN: 5♦
+  RIVER: 8♣
+  Main Agent shows Q♣, 8♦: Boat
+  Fish shows 6♠, 9♣: Two Pair
+  Main Agent wins $15.00
+
+--- Hand #91 ---
+Winner: Main Agent ($10.00) - High Card
+Player 1 cards: 9♠ 10♠
+Player 2 cards: 7♣ 9♣
+Board: Q♠ 8♠ 2♦ 6♦ 4♦
+Stacks: P1 $2000.00 -> $2000.00, P2 $0.00 -> $0.00
+Actions:
+  Fish posts SB $0.00
+  Main Agent posts BB $10.00
+  FLOP: Q♠, 8♠, 2♦
+  TURN: 6♦
+  RIVER: 4♦
+  Main Agent shows 9♠, 10♠: High Card
+  Fish shows 7♣, 9♣: High Card
+  Main Agent wins $10.00
+
+--- Hand #92 ---
+Winner: Fish ($5.00) - One Pair
+Player 1 cards: 8♦ 6♦
+Player 2 cards: 7♦ Q♠
+Board: Q♣ 9♥ 4♥ 6♥ A♣
+Stacks: P1 $2000.00 -> $1995.00, P2 $0.00 -> $5.00
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $0.00
+  FLOP: Q♣, 9♥, 4♥
+  TURN: 6♥
+  RIVER: A♣
+  Main Agent shows 8♦, 6♦: One Pair
+  Fish shows 7♦, Q♠: One Pair
+  Fish wins $5.00
+
+--- Hand #93 ---
+Winner: Main Agent ($15.00) - One Pair
+Player 1 cards: 3♥ 5♦
+Player 2 cards: 10♥ J♦
+Board: A♦ 6♦ 5♣ 4♦ 8♠
+Stacks: P1 $1995.00 -> $2000.00, P2 $5.00 -> $0.00
+Actions:
+  Fish posts SB $5.00
+  Main Agent posts BB $10.00
+  FLOP: A♦, 6♦, 5♣
+  TURN: 4♦
+  RIVER: 8♠
+  Main Agent shows 3♥, 5♦: One Pair
+  Fish shows 10♥, J♦: High Card
+  Main Agent wins $15.00
+
+--- Hand #94 ---
+Winner: Main Agent ($5.00) - One Pair
+Player 1 cards: 5♣ K♦
+Player 2 cards: 8♦ 10♠
+Board: 2♠ 9♦ 5♠ 3♦ 6♦
+Stacks: P1 $2000.00 -> $2000.00, P2 $0.00 -> $0.00
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $0.00
+  FLOP: 2♠, 9♦, 5♠
+  TURN: 3♦
+  RIVER: 6♦
+  Main Agent shows 5♣, K♦: One Pair
+  Fish shows 8♦, 10♠: High Card
+  Main Agent wins $5.00
+
+--- Hand #95 ---
+Winner: Fish ($10.00) - One Pair
+Player 1 cards: 8♣ 9♠
+Player 2 cards: J♣ J♥
+Board: 6♦ K♦ Q♦ 2♦ 7♥
+Stacks: P1 $2000.00 -> $1990.00, P2 $0.00 -> $10.00
+Actions:
+  Fish posts SB $0.00
+  Main Agent posts BB $10.00
+  FLOP: 6♦, K♦, Q♦
+  TURN: 2♦
+  RIVER: 7♥
+  Main Agent shows 8♣, 9♠: High Card
+  Fish shows J♣, J♥: One Pair
+  Fish wins $10.00
+
+--- Hand #96 ---
+Winner: Main Agent ($15.00) - Boat
+Player 1 cards: 2♦ K♣
+Player 2 cards: 6♣ 9♥
+Board: 5♠ 2♠ 5♥ 2♣ 3♥
+Stacks: P1 $1990.00 -> $2000.00, P2 $10.00 -> $0.00
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  FLOP: 5♠, 2♠, 5♥
+  TURN: 2♣
+  RIVER: 3♥
+  Main Agent shows 2♦, K♣: Boat
+  Fish shows 6♣, 9♥: Two Pair
+  Main Agent wins $15.00
+
+--- Hand #97 ---
+Winner: Fish ($10.00) - High Card
+Player 1 cards: 9♦ 3♥
+Player 2 cards: K♠ A♣
+Board: 8♦ Q♠ 2♦ 6♣ 7♠
+Stacks: P1 $2000.00 -> $1990.00, P2 $0.00 -> $10.00
+Actions:
+  Fish posts SB $0.00
+  Main Agent posts BB $10.00
+  FLOP: 8♦, Q♠, 2♦
+  TURN: 6♣
+  RIVER: 7♠
+  Main Agent shows 9♦, 3♥: High Card
+  Fish shows K♠, A♣: High Card
+  Fish wins $10.00
+
+--- Hand #98 ---
+Winner: Main Agent ($15.00) - One Pair
+Player 1 cards: 7♥ 4♣
+Player 2 cards: A♠ 9♥
+Board: 7♠ 8♠ Q♠ 6♣ 3♣
+Stacks: P1 $1990.00 -> $2000.00, P2 $10.00 -> $0.00
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $10.00
+  FLOP: 7♠, 8♠, Q♠
+  TURN: 6♣
+  RIVER: 3♣
+  Main Agent shows 7♥, 4♣: One Pair
+  Fish shows A♠, 9♥: High Card
+  Main Agent wins $15.00
+
+--- Hand #99 ---
+Winner: Main Agent ($10.00) - One Pair
+Player 1 cards: J♣ 10♣
+Player 2 cards: K♦ 4♠
+Board: 6♠ J♥ 8♦ 7♥ A♦
+Stacks: P1 $2000.00 -> $2000.00, P2 $0.00 -> $0.00
+Actions:
+  Fish posts SB $0.00
+  Main Agent posts BB $10.00
+  FLOP: 6♠, J♥, 8♦
+  TURN: 7♥
+  RIVER: A♦
+  Main Agent shows J♣, 10♣: One Pair
+  Fish shows K♦, 4♠: High Card
+  Main Agent wins $10.00
+
+--- Hand #100 ---
+Winner: Main Agent ($5.00) - Two Pair
+Player 1 cards: Q♠ K♠
+Player 2 cards: 3♥ 2♣
+Board: A♠ 9♠ K♣ Q♦ J♦
+Stacks: P1 $2000.00 -> $2000.00, P2 $0.00 -> $0.00
+Actions:
+  Main Agent posts SB $5.00
+  Fish posts BB $0.00
+  FLOP: A♠, 9♠, K♣
+  TURN: Q♦
+  RIVER: J♦
+  Main Agent shows Q♠, K♠: Two Pair
+  Fish shows 3♥, 2♣: High Card
+  Main Agent wins $5.00
+
