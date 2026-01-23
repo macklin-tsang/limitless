@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8080/api';
+// Python backend API URL
+const API_BASE_URL = process.env.REACT_APP_PYTHON_API_URL || 'http://localhost:5000/api';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
@@ -9,19 +10,20 @@ const api = axios.create({
   },
 });
 
-// User API
-export const getUsers = () => api.get('/users');
-export const createUser = (userData) => api.post('/users', userData);
-export const getUserById = (id) => api.get(`/users/${id}`);
-
-// Game Results API
-export const saveGameResult = (resultData) => api.post('/results', resultData);
-export const getGameHistory = (userId) => api.get(`/results/user/${userId}`);
-export const getUserStats = (userId) => api.get(`/results/stats/${userId}`);
-
 // Simulation API
 export const runSimulation = async (simulationParams) => {
   const response = await api.post('/simulate', simulationParams);
+  return response.data;
+};
+
+export const runSingleHand = async (params) => {
+  const response = await api.post('/simulate/single', params);
+  return response.data;
+};
+
+// Health check
+export const checkHealth = async () => {
+  const response = await api.get('/health');
   return response.data;
 };
 
@@ -33,7 +35,7 @@ export const handleApiError = (error) => {
     return { error: true, message, status: error.response.status };
   } else if (error.request) {
     // Request was made but no response received
-    return { error: true, message: 'No response from server. Is the backend running?', status: 0 };
+    return { error: true, message: 'No response from server. Is the Python backend running?', status: 0 };
   } else {
     // Error setting up request
     return { error: true, message: error.message, status: -1 };
