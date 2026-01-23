@@ -1,11 +1,11 @@
 import React from 'react';
 
-// Suit symbols and colors
+// Suit symbols and colors - colored backgrounds with white text
 const SUITS = {
-  h: { symbol: '♥', color: 'text-red-600', name: 'hearts' },
-  d: { symbol: '♦', color: 'text-red-600', name: 'diamonds' },
-  c: { symbol: '♣', color: 'text-gray-900', name: 'clubs' },
-  s: { symbol: '♠', color: 'text-gray-900', name: 'spades' },
+  h: { symbol: '♥', color: 'text-white', bg: 'bg-red-600', name: 'hearts' },
+  d: { symbol: '♦', color: 'text-white', bg: 'bg-blue-600', name: 'diamonds' },
+  c: { symbol: '♣', color: 'text-white', bg: 'bg-green-600', name: 'clubs' },
+  s: { symbol: '♠', color: 'text-white', bg: 'bg-gray-700', name: 'spades' },
 };
 
 // Rank display (T = 10)
@@ -35,11 +35,11 @@ function Card({
   animate = false,
   onClick,
 }) {
-  // Size classes
+  // Size classes - wider cards for better text fit
   const sizeClasses = {
-    sm: 'w-12 h-16 text-sm',
-    md: 'w-16 h-22 text-base',
-    lg: 'w-24 h-32 text-xl',
+    sm: 'w-14 h-20 text-sm',
+    md: 'w-20 h-28 text-base',
+    lg: 'w-28 h-40 text-xl',
   };
 
   const suitData = SUITS[suit] || SUITS.s;
@@ -88,31 +88,31 @@ function Card({
     );
   }
 
-  // Face up card
+  // Face up card - colored background based on suit
   return (
     <div
-      className={`${baseClasses} bg-white border border-gray-200`}
+      className={`${baseClasses} ${suitData.bg} border-2 border-white/30`}
       onClick={onClick}
       role="img"
       aria-label={`${displayRank} of ${suitData.name}`}
     >
       {/* Top-left corner */}
-      <div className={`absolute top-1 left-1 ${suitData.color} font-bold leading-tight`}>
-        <div className="text-center">{displayRank}</div>
-        <div className="text-center -mt-1">{suitData.symbol}</div>
+      <div className={`absolute top-1.5 left-1.5 ${suitData.color} font-bold leading-tight`}>
+        <div className="text-center text-lg">{displayRank}</div>
+        <div className="text-center -mt-1 text-sm">{suitData.symbol}</div>
       </div>
 
       {/* Center suit symbol */}
       <div className={`absolute inset-0 flex items-center justify-center ${suitData.color}`}>
-        <span className={size === 'lg' ? 'text-4xl' : size === 'md' ? 'text-2xl' : 'text-xl'}>
+        <span className={size === 'lg' ? 'text-5xl' : size === 'md' ? 'text-3xl' : 'text-2xl'}>
           {suitData.symbol}
         </span>
       </div>
 
       {/* Bottom-right corner (rotated) */}
-      <div className={`absolute bottom-1 right-1 ${suitData.color} font-bold leading-tight rotate-180`}>
-        <div className="text-center">{displayRank}</div>
-        <div className="text-center -mt-1">{suitData.symbol}</div>
+      <div className={`absolute bottom-1.5 right-1.5 ${suitData.color} font-bold leading-tight rotate-180`}>
+        <div className="text-center text-lg">{displayRank}</div>
+        <div className="text-center -mt-1 text-sm">{suitData.symbol}</div>
       </div>
     </div>
   );
@@ -167,9 +167,9 @@ function CardGrid({
  */
 function EmptyCardSlot({ size = 'md' }) {
   const sizeClasses = {
-    sm: 'w-12 h-16',
-    md: 'w-16 h-22',
-    lg: 'w-24 h-32',
+    sm: 'w-14 h-20',
+    md: 'w-20 h-28',
+    lg: 'w-28 h-40',
   };
 
   return (

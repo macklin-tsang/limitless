@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
-import { runSimulation, handleApiError } from '../services/api';
+import { useState } from 'react';
+
+// API base URL for Python backend
+const PYTHON_API_URL = process.env.REACT_APP_PYTHON_API_URL || 'http://localhost:5000/api';
 
 function Simulation() {
   const [config, setConfig] = useState({
-    userId: 1,
     agentType: 'TAG',
-    opponentType: 'RANDOM',
+    opponentType: 'FISH',
     numGames: 100,
-    smallBlind: 1,
-    bigBlind: 2,
+    smallBlind: 5,
+    bigBlind: 10,
   });
   const [results, setResults] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -29,57 +30,70 @@ function Simulation() {
     setResults(null);
 
     try {
-      const data = await runSimulation(config);
+      const response = await fetch(`${PYTHON_API_URL}/simulate`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          agent_type: config.agentType,
+          opponent_type: config.opponentType,
+          num_games: config.numGames,
+          small_blind: config.smallBlind,
+          big_blind: config.bigBlind,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to run simulation');
+      }
+
+      const data = await response.json();
       setResults(data);
     } catch (err) {
-      const errResult = handleApiError(err);
-      setError(errResult.message);
+      setError(err.message || 'Failed to connect to Python backend. Make sure it is running on port 5000.');
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 p-8">
+    <div className="min-h-screen bg-gray-100 p-8">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-3xl font-bold text-white mb-8">Run Simulation</h1>
+        <h1 className="text-3xl font-bold text-gray-800 mb-8">Batch Simulation</h1>
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Configuration Form */}
-          <div className="bg-gray-800 rounded-xl p-6 shadow-xl">
-            <h2 className="text-xl font-semibold text-white mb-4">Configuration</h2>
+          <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-200">
+            <h2 className="text-xl font-semibold text-gray-800 mb-4">Configuration</h2>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label className="block text-gray-300 mb-1">Agent Type</label>
+                <label className="block text-gray-700 mb-1 font-medium">Agent Type</label>
                 <select
                   name="agentType"
                   value={config.agentType}
                   onChange={handleInputChange}
-                  className="w-full bg-gray-700 text-white rounded-lg p-3 border border-gray-600 focus:border-yellow-500 focus:outline-none"
+                  className="w-full bg-gray-50 text-gray-800 rounded-lg p-3 border border-gray-300 focus:border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-200"
                 >
                   <option value="TAG">TAG (Tight-Aggressive)</option>
-                  <option value="LAG">LAG (Loose-Aggressive)</option>
-                  <option value="ROCK">Rock (Tight-Passive)</option>
+                  <option value="MAIN">Main Agent</option>
                 </select>
               </div>
 
               <div>
-                <label className="block text-gray-300 mb-1">Opponent Type</label>
+                <label className="block text-gray-700 mb-1 font-medium">Opponent Type</label>
                 <select
                   name="opponentType"
                   value={config.opponentType}
                   onChange={handleInputChange}
-                  className="w-full bg-gray-700 text-white rounded-lg p-3 border border-gray-600 focus:border-yellow-500 focus:outline-none"
+                  className="w-full bg-gray-50 text-gray-800 rounded-lg p-3 border border-gray-300 focus:border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-200"
                 >
-                  <option value="RANDOM">Random</option>
-                  <option value="TAG">TAG</option>
-                  <option value="LAG">LAG</option>
                   <option value="FISH">Fish (Calling Station)</option>
+                  <option value="TAG">TAG</option>
+                  <option value="MAIN">Main Agent</option>
                 </select>
               </div>
 
               <div>
-                <label className="block text-gray-300 mb-1">Number of Games</label>
+                <label className="block text-gray-700 mb-1 font-medium">Number of Hands</label>
                 <input
                   type="number"
                   name="numGames"
@@ -87,31 +101,31 @@ function Simulation() {
                   onChange={handleInputChange}
                   min="10"
                   max="10000"
-                  className="w-full bg-gray-700 text-white rounded-lg p-3 border border-gray-600 focus:border-yellow-500 focus:outline-none"
+                  className="w-full bg-gray-50 text-gray-800 rounded-lg p-3 border border-gray-300 focus:border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-200"
                 />
               </div>
 
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-gray-300 mb-1">Small Blind</label>
+                  <label className="block text-gray-700 mb-1 font-medium">Small Blind</label>
                   <input
                     type="number"
                     name="smallBlind"
                     value={config.smallBlind}
                     onChange={handleInputChange}
                     min="1"
-                    className="w-full bg-gray-700 text-white rounded-lg p-3 border border-gray-600 focus:border-yellow-500 focus:outline-none"
+                    className="w-full bg-gray-50 text-gray-800 rounded-lg p-3 border border-gray-300 focus:border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-200"
                   />
                 </div>
                 <div>
-                  <label className="block text-gray-300 mb-1">Big Blind</label>
+                  <label className="block text-gray-700 mb-1 font-medium">Big Blind</label>
                   <input
                     type="number"
                     name="bigBlind"
                     value={config.bigBlind}
                     onChange={handleInputChange}
                     min="2"
-                    className="w-full bg-gray-700 text-white rounded-lg p-3 border border-gray-600 focus:border-yellow-500 focus:outline-none"
+                    className="w-full bg-gray-50 text-gray-800 rounded-lg p-3 border border-gray-300 focus:border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-200"
                   />
                 </div>
               </div>
@@ -119,7 +133,7 @@ function Simulation() {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full py-3 bg-yellow-500 hover:bg-yellow-400 disabled:bg-gray-600 text-gray-900 font-bold rounded-lg transition-colors"
+                className="w-full py-3 bg-yellow-500 hover:bg-yellow-400 disabled:bg-gray-400 text-gray-900 font-bold rounded-lg transition-colors"
               >
                 {loading ? 'Running Simulation...' : 'Run Simulation'}
               </button>
@@ -127,8 +141,8 @@ function Simulation() {
           </div>
 
           {/* Results Display */}
-          <div className="bg-gray-800 rounded-xl p-6 shadow-xl">
-            <h2 className="text-xl font-semibold text-white mb-4">Results</h2>
+          <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-200">
+            <h2 className="text-xl font-semibold text-gray-800 mb-4">Results</h2>
 
             {loading && (
               <div className="flex items-center justify-center h-64">
@@ -137,7 +151,7 @@ function Simulation() {
             )}
 
             {error && (
-              <div className="bg-red-900/50 border border-red-500 rounded-lg p-4 text-red-200">
+              <div className="bg-red-50 border border-red-300 rounded-lg p-4 text-red-700">
                 {error}
               </div>
             )}
@@ -167,8 +181,8 @@ function Simulation() {
                   />
                 </div>
 
-                <div className="mt-4 pt-4 border-t border-gray-700">
-                  <p className="text-gray-400 text-sm">
+                <div className="mt-4 pt-4 border-t border-gray-200">
+                  <p className="text-gray-600 text-sm">
                     {results.wins > results.losses
                       ? 'The agent performed well against this opponent type!'
                       : 'The agent struggled against this opponent. Consider adjusting strategy.'}
@@ -192,11 +206,11 @@ function Simulation() {
 function StatCard({ label, value, highlight = false, colSpan = '1' }) {
   return (
     <div
-      className={`bg-gray-700/50 rounded-lg p-4 ${colSpan === '2' ? 'col-span-2' : ''}`}
+      className={`bg-gray-50 rounded-lg p-4 border border-gray-200 ${colSpan === '2' ? 'col-span-2' : ''}`}
     >
-      <p className="text-gray-400 text-sm">{label}</p>
+      <p className="text-gray-500 text-sm">{label}</p>
       <p
-        className={`text-2xl font-bold ${highlight ? 'text-green-400' : 'text-white'}`}
+        className={`text-2xl font-bold ${highlight ? 'text-green-600' : 'text-gray-800'}`}
       >
         {value}
       </p>
