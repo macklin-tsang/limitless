@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
+import Training from './pages/Training';
 import './App.css';
 
 function NavLink({ to, children }) {
@@ -31,6 +32,7 @@ function App() {
               </Link>
               <div className="flex space-x-4">
                 <NavLink to="/">Dashboard</NavLink>
+                <NavLink to="/training">Training</NavLink>
                 <NavLink to="/simulator">Simulator</NavLink>
               </div>
             </div>
@@ -40,6 +42,7 @@ function App() {
         {/* Routes */}
         <Routes>
           <Route path="/" element={<Dashboard />} />
+          <Route path="/training" element={<Training />} />
           <Route path="/simulator" element={<Home />} />
         </Routes>
       </div>

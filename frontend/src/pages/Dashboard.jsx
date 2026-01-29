@@ -64,9 +64,9 @@ function Dashboard() {
           <h1 className="text-2xl font-bold text-gray-900 mb-4">Agent Observability Dashboard</h1>
           <div className="flex flex-wrap gap-4 items-end">
             <SelectField label="Agent 1" name="agent1Type" value={config.agent1Type} onChange={handleChange}
-              options={[['TAG', 'TAG (Tight-Aggressive)'], ['MAIN', 'Main Agent'], ['FISH', 'Fish']]} />
+              options={[['TAG', 'TAG (Tight-Aggressive)'], ['MAIN', 'Main Agent'], ['FISH', 'Fish'], ['RL', 'RL Agent (Trained)']]} />
             <SelectField label="Agent 2" name="agent2Type" value={config.agent2Type} onChange={handleChange}
-              options={[['FISH', 'Fish (Calling Station)'], ['TAG', 'TAG'], ['MAIN', 'Main Agent']]} />
+              options={[['FISH', 'Fish (Calling Station)'], ['TAG', 'TAG'], ['MAIN', 'Main Agent'], ['RL', 'RL Agent (Trained)']]} />
             <NumberField label="Hands" name="numHands" value={config.numHands} onChange={handleChange} min={10} max={10000} />
             <NumberField label="SB" name="smallBlind" value={config.smallBlind} onChange={handleChange} min={1} />
             <NumberField label="BB" name="bigBlind" value={config.bigBlind} onChange={handleChange} min={2} />
