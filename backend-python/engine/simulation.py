@@ -390,13 +390,17 @@ class SimulationGame:
             elif action == "call":
                 call_amount = self.current_bet
                 old_bet = current_player.current_bet
-                actual_bet = current_player.bet(call_amount)
-                additional = actual_bet - old_bet
-                self.pot += additional
-                if current_player.is_all_in:
-                    self.action_history.append(f"{current_player.name} calls ${additional:.2f} (all-in)")
+                # If there's nothing to call, treat as check
+                if call_amount <= old_bet:
+                    self.action_history.append(f"{current_player.name} checks")
                 else:
-                    self.action_history.append(f"{current_player.name} calls ${additional:.2f}")
+                    actual_bet = current_player.bet(call_amount)
+                    additional = actual_bet - old_bet
+                    self.pot += additional
+                    if current_player.is_all_in:
+                        self.action_history.append(f"{current_player.name} calls ${additional:.2f} (all-in)")
+                    else:
+                        self.action_history.append(f"{current_player.name} calls ${additional:.2f}")
 
             elif action == "raise":
                 raise_to = max(bet_size, self.current_bet * 2)
@@ -410,9 +414,6 @@ class SimulationGame:
                     self.action_history.append(f"{current_player.name} raises to ${actual_bet:.2f} (all-in)")
                 else:
                     self.action_history.append(f"{current_player.name} raises to ${raise_to:.2f}")
-
-            elif action == "check":
-                self.action_history.append(f"{current_player.name} checks")
 
             action_count += 1
             if action_count > 100:
