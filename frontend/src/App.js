@@ -1,7 +1,22 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
-import Simulation from './pages/Simulation';
+import Dashboard from './pages/Dashboard';
 import './App.css';
+
+function NavLink({ to, children }) {
+  const location = useLocation();
+  const active = location.pathname === to;
+  return (
+    <Link
+      to={to}
+      className={`px-3 py-2 rounded-md transition-colors font-medium ${
+        active ? 'text-yellow-600 bg-yellow-50' : 'text-gray-600 hover:text-gray-900'
+      }`}
+    >
+      {children}
+    </Link>
+  );
+}
 
 function App() {
   return (
@@ -15,18 +30,8 @@ function App() {
                 Limitless Poker AI
               </Link>
               <div className="flex space-x-4">
-                <Link
-                  to="/"
-                  className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md transition-colors font-medium"
-                >
-                  Simulator
-                </Link>
-                <Link
-                  to="/simulation"
-                  className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md transition-colors font-medium"
-                >
-                  Batch Run
-                </Link>
+                <NavLink to="/">Dashboard</NavLink>
+                <NavLink to="/simulator">Simulator</NavLink>
               </div>
             </div>
           </div>
@@ -34,8 +39,8 @@ function App() {
 
         {/* Routes */}
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/simulation" element={<Simulation />} />
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/simulator" element={<Home />} />
         </Routes>
       </div>
     </Router>

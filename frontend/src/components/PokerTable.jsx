@@ -12,7 +12,7 @@ const PHASES = {
 };
 
 // API base URL for Python backend
-const PYTHON_API_URL = process.env.REACT_APP_PYTHON_API_URL || 'http://localhost:5000/api';
+const PYTHON_API_URL = process.env.REACT_APP_PYTHON_API_URL || 'http://localhost:5001/api';
 
 /**
  * PokerTable component - Agent vs Agent simulation interface
