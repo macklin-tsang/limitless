@@ -522,7 +522,7 @@ def run_simulation(
     num_hands: int,
     agent1_config: AgentConfig,
     agent2_config: AgentConfig,
-    starting_stack: float = 1000.0,
+    starting_stack: float = None,
     small_blind: float = 5.0,
     big_blind: float = 10.0,
     seed: int = None,
@@ -536,7 +536,7 @@ def run_simulation(
         num_hands: Number of hands to play
         agent1_config: Configuration for agent 1
         agent2_config: Configuration for agent 2
-        starting_stack: Starting stack for each player
+        starting_stack: Starting stack for each player (defaults to 100 * big_blind)
         small_blind: Small blind amount
         big_blind: Big blind amount
         seed: Random seed for reproducibility
@@ -546,6 +546,10 @@ def run_simulation(
     Returns:
         SimulationResult with statistics and hand histories
     """
+    # Default buy-in is always 100bb
+    if starting_stack is None:
+        starting_stack = big_blind * 100
+
     result = SimulationResult(
         num_hands=num_hands,
         agent1_stats=SimulationStats(agent_name=agent1_config.name),
@@ -559,32 +563,27 @@ def run_simulation(
 
     game = SimulationGame(small_blind=small_blind, big_blind=big_blind, seed=seed)
 
-    # Reset stacks to starting amount for each session
-    player1_stack = starting_stack
-    player2_stack = starting_stack
-
     # Progress tracking
     progress_interval = max(1, num_hands // 20)  # Update every 5%
 
     for hand_num in range(1, num_hands + 1):
-        # Create fresh players for this hand with current stacks
+        # Both players start every hand at exactly starting_stack (100bb).
+        # This guarantees symmetric effective stacks so all-in pots are
+        # always for the same max amount, and we measure decision quality
+        # at a consistent depth rather than short-stack dynamics.
         game.players = []
         position1 = (hand_num - 1) % 2  # Alternates 0, 1, 0, 1...
         position2 = 1 - position1
 
-        p1 = game.add_player(agent1_config.name, player1_stack, position1, agent1_config.brain_module)
-        p2 = game.add_player(agent2_config.name, player2_stack, position2, agent2_config.brain_module)
+        p1 = game.add_player(agent1_config.name, starting_stack, position1, agent1_config.brain_module)
+        p2 = game.add_player(agent2_config.name, starting_stack, position2, agent2_config.brain_module)
 
-        # Store stacks before hand
+        # Store stacks before hand (always starting_stack)
         p1_stack_before = p1.stack
         p2_stack_before = p2.stack
 
         # Play the hand
         winner, amount_won, description, went_to_showdown = game.play_hand()
-
-        # Update stacks
-        player1_stack = p1.stack
-        player2_stack = p2.stack
 
         # Record hand result
         hand_result = HandResult(
@@ -781,12 +780,11 @@ if __name__ == "__main__":
     print("Hands: 100")
     print()
 
-    # Run simulation
+    # Run simulation (100bb buy-in derived from big blind)
     result = run_simulation(
         num_hands=100,
         agent1_config=MAIN_AGENT,
         agent2_config=FISH_AGENT,
-        starting_stack=1000.0,
         small_blind=5.0,
         big_blind=10.0,
         seed=42,  # For reproducibility
