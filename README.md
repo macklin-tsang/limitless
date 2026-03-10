@@ -4,19 +4,34 @@
 Limitless is a No Limit Texas Hold'em AI Agent that simulates heads-up games using explicit game knowledge, Monte Carlo simulation and EV for decisions.
 
 ## Tech Stack
-- **Backend**: Python (Flask API + Poker Engine)
-- **Frontend**: React with Tailwind CSS
+- **Backend**: 
+  - Python (Flask API + Poker Engine)
+  - PyTorch
+  - Gymnasium
+  - NumPy
+- **Frontend**: 
+  - React 19 with Tailwind CSS
+  - Recharts
+  - Axios
 
 ## Project Structure
 ```
 limitless/
 ├── backend-python/
 │   ├── app.py              # Flask API wrapper
+│   ├── train_rl.py         # DQN training script
+│   ├── evaluate_rl.py      # RL agent evaluation
 │   ├── requirements.txt    # Python dependencies
+│   ├── models/             # Saved DQN model checkpoints
+│   ├── metrics/            # Training metrics (JSON)
 │   └── engine/
 │       ├── game.py         # Poker game engine
+│       ├── poker_env.py    # Gymnasium RL environment
+│       ├── dqn.py          # Deep Q-Network architecture
+│       ├── rl_brain.py     # RL agent decision logic
 │       ├── brain.py        # TAG agent decision logic
 │       ├── fish_brain.py   # Fish (calling station) agent
+│       ├── opponent_model.py # Opponent modeling
 │       ├── card.py         # Card class
 │       ├── hand_eval.py    # Hand evaluation
 │       ├── strength.py     # Hand strength calculations
@@ -24,7 +39,7 @@ limitless/
 ├── frontend/
 │   ├── src/
 │   │   ├── components/     # React components (Card, PokerTable)
-│   │   ├── pages/          # Home and Simulation pages
+│   │   ├── pages/          # Home, Simulation, Training, Dashboard
 │   │   └── services/       # API client
 │   └── package.json
 └── README.md
